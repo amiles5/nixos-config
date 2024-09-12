@@ -20,7 +20,7 @@ general {
 }
 
 image {
-  size=750ZZ
+  size=750
   border_color=rgb(0C96F9)
   border_size=4
   halign=center
