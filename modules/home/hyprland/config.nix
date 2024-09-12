@@ -17,17 +17,18 @@
         "swaync &"
         "wl-paste --watch cliphist store &"
         "hyprlock"
+        "hypridle"
 
         ## App auto start
-        "[workspace 1 silent] floorp"
-        "[workspace 2 silent] kitty"
+#       "[workspace 1 silent] floorp"
+##      "[workspace 2 silent] kitty"
       ];
 
       input = {
-        kb_layout = "us,fr";
+        kb_layout = "gb";
         kb_options ="grp:alt_caps_toggle"; 
         numlock_by_default = true;
-        follow_mouse = 0;
+        follow_mouse = 1;
         float_switch_override_focus = 0;
         mouse_refocus = 0;
         sensitivity = 0;
@@ -39,8 +40,10 @@
       general = {
         "$mainMod" = "SUPER";
         layout = "dwindle";
-        gaps_in = 0;
-        gaps_out = 0;
+#       gaps_in = 0;
+        gaps_in = 3;
+#       gaps_out = 0;
+        gaps_out = 3;
         border_size = 2;
         "col.active_border" = "rgb(98971a) rgb(cc241d) 45deg";
         "col.inactive_border" = "0x00000000";
@@ -148,7 +151,7 @@
         "$mainMod, Space, togglefloating,"
         "$mainMod, Space, centerwindow,"
         "$mainMod, Space, resizeactive, exact 950 600"
-        "$mainMod, D, exec, rofi -show drun || pkill rofi"
+        "$mainMod, D, exec, rofi -show drun"
         "$mainMod SHIFT, D, exec, hyprctl dispatch exec '[workspace 4 silent] discord --enable-features=UseOzonePlatform --ozone-platform=wayland'"
         "$mainMod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
         "$mainMod, Escape, exec, swaylock"
@@ -214,32 +217,24 @@
         "$mainMod ALT, down, moveactive, 0 80"
 
         # media and volume controls
+        ",XF86AudioRaiseVolume,exec, pamixer -i 2"
+        ",XF86AudioLowerVolume,exec, pamixer -d 2"
         ",XF86AudioMute,exec, pamixer -t"
         ",XF86AudioPlay,exec, playerctl play-pause"
         ",XF86AudioNext,exec, playerctl next"
         ",XF86AudioPrev,exec, playerctl previous"
         ",XF86AudioStop, exec, playerctl stop"
-
         "$mainMod, mouse_down, workspace, e-1"
         "$mainMod, mouse_up, workspace, e+1"
 
-        # clipboard manager
-        "$mainMod, V, exec, cliphist list | rofi -dmenu -theme-str 'window {width: 50%;}' | cliphist decode | wl-copy"
-      ];
-
-      # binds active in lockscreen
-      bindl = [
         # laptop brigthness
         ",XF86MonBrightnessUp, exec, brightnessctl set 5%+"
         ",XF86MonBrightnessDown, exec, brightnessctl set 5%-"
         "$mainMod, XF86MonBrightnessUp, exec, brightnessctl set 100%+"
         "$mainMod, XF86MonBrightnessDown, exec, brightnessctl set 100%-"
-      ];
 
-      # binds that repeat when held
-      binde = [
-        ",XF86AudioRaiseVolume,exec, pamixer -i 2"
-        ",XF86AudioLowerVolume,exec, pamixer -d 2"
+        # clipboard manager
+        "$mainMod, V, exec, cliphist list | rofi -dmenu -theme-str 'window {width: 50%;}' | cliphist decode | wl-copy"
       ];
 
       # mouse binding
@@ -325,7 +320,7 @@
     };
 
     extraConfig = "
-      monitor=,preferred,auto,auto
+      monitor=,preferred,auto,2
 
       xwayland {
         force_zero_scaling = true

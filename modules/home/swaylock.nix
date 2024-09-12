@@ -12,8 +12,10 @@
       ignore-empty-password=true;
       
       indicator = true;
-      indicator-radius = 111;
-      indicator-thickness = 9;
+#     indicator-radius = 111;
+      indicator-radius = 200;
+#     indicator-thickness = 9;
+      indicator-thickness = 20;
       
       effect-blur = "7x5";
       effect-vignette = "0.75:0.75";

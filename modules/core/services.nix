@@ -4,6 +4,8 @@
     gvfs.enable = true;
     gnome.gnome-keyring.enable = true;
     dbus.enable = true;
+    openssh.enable = true;
+    tailscale.enable = true;
     fstrim.enable = true;
   };
   services.logind.extraConfig = ''

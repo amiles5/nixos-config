@@ -15,6 +15,7 @@
       export "MICRO_TRUECOLOR=1"
     '';
     initExtra = ''
+      "fastfetch"  
       setopt share_history 
       setopt hist_expire_dups_first
       setopt hist_ignore_dups
@@ -61,7 +62,7 @@
       open = "xdg-open";
       space = "ncdu";
       man = "BAT_THEME='default' batman";
-
+      vi = "vim";
       l = "eza --icons  -a --group-directories-first -1"; #EZA_ICON_SPACING=2
       ll = "eza --icons  -a --group-directories-first -1 --no-user --long";
       tree = "eza --icons --tree --group-directories-first";
@@ -70,6 +71,7 @@
       cdnix = "cd ~/nixos-config && codium ~/nixos-config";
       ns = "nom-shell --run zsh";
       nix-switch = "nh os switch";
+      fr = "nh os switch";
       nix-update = "nh os switch --update";
       nix-clean = "nh clean all --keep 5";
       nix-search = "nh search";

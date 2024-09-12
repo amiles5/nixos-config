@@ -70,7 +70,14 @@ in
     winetricks
     wineWowPackages.wayland
     zenity
+    gparted
+#   openssh
+    ventoy-full
+    tidal-hifi
+    tidal-dl
+    samba4Full
 
+    hypridle
     # C / C++
     gcc
     gdb
@@ -78,7 +85,6 @@ in
 
     # Python
     python3
-    python312Packages.ipython
 
     inputs.alejandra.defaultPackage.${system}
   ]);
