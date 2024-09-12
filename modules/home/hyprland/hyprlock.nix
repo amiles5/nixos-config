@@ -9,7 +9,7 @@ in
 background {
   blur_passes=3
   blur_size=2
-  path=/home/milesj/Pictures/wallpapers/Fantasy-Hongkong.png
+  path=/home/milesj/Pictures/wallpapers/others/Fantasy-Hongkong.png
 }
 
 general {
@@ -20,7 +20,7 @@ general {
 }
 
 image {
-  size=750
+  size=750ZZ
   border_color=rgb(0C96F9)
   border_size=4
   halign=center
