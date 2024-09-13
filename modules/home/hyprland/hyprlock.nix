@@ -24,7 +24,7 @@ image {
   border_color=rgb(0C96F9)
   border_size=4
   halign=center
-  path=/home/milesj/Pictures/wallpapers/others/cats.png
+  path=/home/milesj/Pictures/wallpapers/others/cats.jpg
   position=0, 200
   rounding=-1
   valign=center
