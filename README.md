@@ -8,11 +8,11 @@
    <div align="center">
       <p></p>
       <div align="center">
-         <a href="https://github.com/Frost-Phoenix/nixos-config/stargazers">
-            <img src="https://img.shields.io/github/stars/Frost-Phoenix/nixos-config?color=FABD2F&labelColor=282828&style=for-the-badge&logo=starship&logoColor=FABD2F">
+         <a href="https://github.com/amiles5/nixos-config/stargazers">
+            <img src="https://img.shields.io/github/stars/amiles5/nixos-config?color=FABD2F&labelColor=282828&style=for-the-badge&logo=starship&logoColor=FABD2F">
          </a>
-         <a href="https://github.com/Frost-Phoenix/nixos-config/">
-            <img src="https://img.shields.io/github/repo-size/Frost-Phoenix/nixos-config?color=B16286&labelColor=282828&style=for-the-badge&logo=github&logoColor=B16286">
+         <a href="https://github.com/amiles5/nixos-config/">
+            <img src="https://img.shields.io/github/repo-size/amiles5/nixos-config?color=B16286&labelColor=282828&style=for-the-badge&logo=github&logoColor=B16286">
          </a>
          <a = href="https://nixos.org">
             <img src="https://img.shields.io/badge/NixOS-unstable-blue.svg?style=for-the-badge&labelColor=282828&logo=NixOS&logoColor=458588&color=458588">
@@ -44,7 +44,7 @@ Hyprlock (EXPAND)
 </p>
 </details>
 
-Here is my previous Catppuccin rice. You can find it [here](https://github.com/Frost-Phoenix/nixos-config/tree/catppuccin)
+Here is my previous Catppuccin rice. You can find it [here](https://github.com/amiles5/nixos-config/tree/catppuccin)
 <details>
 <summary>
 Catppuccin (EXPAND)
@@ -409,8 +409,8 @@ Even though I use home manager, there is still a little bit of manual configurat
 ```nix
 programs.git = {
    ...
-   userName = "Frost-Phoenix";
-   userEmail = "67cyril6767@gmail.com";
+   userName = "amiles5";
+   userEmail = "anthony.miles@gmail.com";
    ...
 };
 ```
