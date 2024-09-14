@@ -20,7 +20,11 @@ services.avahi = {
   enable = true;
   nssmdns4 = true;
   openFirewall = true;
-};
+  publish = {
+    enable = true;
+    userServices = true;
+    };
+  }; 
 
 services.logind.extraConfig = ''
     # don’t shutdown when power button is short-pressed
