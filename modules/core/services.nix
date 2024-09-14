@@ -11,9 +11,14 @@
 
 services.printing = {
       enable = true;
-      drivers = [
-        pkgs.cups-brother-hl1210w
-      ];
+    browsing = true;
+    defaultShared = true;
+    listenAddresses = [ "*:631" ];
+    drivers = [ pkgs.cups-brother-hl1210w ];
+    allowFrom = [ "all" ];
+    extraConf = ''
+      DefaultPaperSize A4
+    '';
     };
 
 services.avahi = {
