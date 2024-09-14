@@ -25,6 +25,7 @@
    </div>
 </h1>
 
+This repo is derived from [Frost-Phoenix/nixos-config](https://github.com/Frost-Phoenix/nixos-config).
 
 ### 🖼️ Gallery
 
