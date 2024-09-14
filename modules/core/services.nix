@@ -1,4 +1,4 @@
-{ ... }: 
+{ pkgs,... }: 
 {
   services = {
     gvfs.enable = true;
@@ -7,17 +7,22 @@
     openssh.enable = true;
     tailscale.enable = true;
     fstrim.enable = true;
-    avahi.enable = true;
-    printing.enable = true;
- #  printing = {
- #    enable = true;
- #    drivers = [
- #      # pkgs.hplipWithPlugin
- #      cups-brother-hl1210w
- #    ];
- #  };
   };
-  services.logind.extraConfig = ''
+
+services.printing = {
+      enable = true;
+      drivers = [
+        pkgs.cups-brother-hl1210w
+      ];
+    };
+
+services.avahi = {
+  enable = true;
+  nssmdns4 = true;
+  openFirewall = true;
+};
+
+services.logind.extraConfig = ''
     # don’t shutdown when power button is short-pressed
     HandlePowerKey=ignore
   '';

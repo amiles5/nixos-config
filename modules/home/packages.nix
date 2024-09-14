@@ -77,7 +77,7 @@ in
     tidal-dl
     samba4Full
     cups-brother-hl1210w
-
+    brlaser
     hypridle
     # C / C++
     gcc
