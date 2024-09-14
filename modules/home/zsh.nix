@@ -52,7 +52,7 @@
       c = "clear";
       cd = "z";
       tt = "gtrash put";
-      cat = "bat";
+#     cat = "bat";
       nano = "micro";
       code = "codium";
       py = "python";

@@ -76,6 +76,7 @@ in
     tidal-hifi
     tidal-dl
     samba4Full
+    cups-brother-hl1210w
 
     hypridle
     # C / C++
