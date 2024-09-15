@@ -27,13 +27,13 @@
   fileSystems."/mnt/roon_data" =
     { device = "//192.168.1.250/roon_data_yakov";
       fsType = "cifs";
-      options = [ "username=milesj" "password=fasterdoodlefridge" "uid=1000" "gid=100"];
+      options = [ "credentials=/etc/samba/cred" "uid=1000" "gid=100"];
     };
 
   fileSystems."/mnt/backup_images" =
     { device = "//192.168.1.250/backup_images";
       fsType = "cifs";
-      options = [ "username=milesj" "password=fasterdoodlefridge" "uid=1000" "gid=100"];
+      options = [ "credentials=/etc/samba/cred" "uid=1000" "gid=100"];
     };
 
 swapDevices = [ ];
