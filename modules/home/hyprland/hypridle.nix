@@ -7,7 +7,7 @@ let
 in
 {
   home.packages = [ pkgs.hypridle ];
-  xdg.configFile."hypr/hypidle.conf".text = ''                                                      
+  xdg.configFile."hypr/hypridle.conf".text = ''                                                      
 general {
     lock_cmd = pidof hyprlock || hyprlock # runs hyprlock if it is not already running (this is always run when "loginctl lock-session" is called) 
     # unlock_cmd = killall hyprlock # kills hyprlock when unlocking (this is always run when "loginctl unlock-session" is called)
