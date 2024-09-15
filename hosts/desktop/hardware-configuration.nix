@@ -14,17 +14,17 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/4bf4b1fc-e139-4023-b101-74c49912948e";
+    { device = "/dev/disk/by-uuid/e23eaa4d-24df-4d31-8070-20a355727db1";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/412D-6BBC";
+    { device = "/dev/disk/by-uuid/0E6D-7314";
       fsType = "vfat";
-      options = [ "fmask=0022" "dmask=0022" ];
+      options = [ "fmask=0077" "dmask=0077" ];
     };
  
-  fileSystems."/mnt/roon_data" =
+ fileSystems."/mnt/roon_data" =
     { device = "//192.168.1.250/roon_data_yakov";
       fsType = "cifs";
       options = [ "credentials=/etc/samba/cred" "uid=1000" "gid=100"];
@@ -35,8 +35,7 @@
       fsType = "cifs";
       options = [ "credentials=/etc/samba/cred" "uid=1000" "gid=100"];
     };
-
-swapDevices = [ ];
+  swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
