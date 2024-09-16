@@ -19,7 +19,7 @@ let
 in
 {
   programs.vscode = {
-    enable = true;
+    enable = false;
     package = pkgs.vscodium;
     extensions = with pkgs.vscode-extensions; [
       # nix language
@@ -27,7 +27,7 @@ in
       # nix-shell suport 
       arrterian.nix-env-selector
       # python
-##############     ms-python.python
+      ms-python.python
       # C/C++
       ms-vscode.cpptools
       # OCaml
