@@ -9,7 +9,7 @@ in
 background {
   blur_passes=3
   blur_size=2
-  path=/home/milesj/Pictures/wallpapers/others/Fantasy-Hongkong.png
+  path=/home/milesj/Pictures/wallpapers/Fantasy-Hongkong.png
 }
 
 general {
@@ -24,7 +24,7 @@ image {
   border_color=rgb(0C96F9)
   border_size=4
   halign=center
-  path=/home/milesj/Pictures/wallpapers/others/cats.jpg
+  path=/home/milesj/Pictures/wallpapers/cats.jpg
   position=0, 200
   rounding=-1
   valign=center

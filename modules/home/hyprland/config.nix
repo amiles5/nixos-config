@@ -10,7 +10,7 @@
         "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &"
         "nm-applet &"
         "wl-clip-persist --clipboard both"
-        "swaybg -m fill -i $(find ~/Pictures/wallpapers/ -maxdepth 1 -type f) &"
+#       "swaybg -m fill -i $(find ~/Pictures/wallpapers/ -maxdepth 1 -type f) &"
         "hyprctl setcursor Bibata-Modern-Ice 24 &"
         "poweralertd &"
         "waybar &"
@@ -18,7 +18,7 @@
         "wl-paste --watch cliphist store &"
         "hyprlock"
         "hypridle"
-
+	"wpaperd -d"
         ## App auto start
         "[workspace 2 silent] kitty"
         "[workspace 5 silent] floorp"

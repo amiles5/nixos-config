@@ -76,9 +76,11 @@ in
     tidal-hifi
     tidal-dl
     samba4Full
-    cups-brother-hl1210w
-    brlaser
+#   cups-brother-hl1210w
+#   brlaser
     hypridle
+    wpaperd
+#   variety
     # C / C++
     gcc
     gdb

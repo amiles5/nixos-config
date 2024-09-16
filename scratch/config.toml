@@ -1,0 +1,8 @@
+#  add to ~/.config/wpaperd
+[default]
+duration = "3m"
+mode = "stretch"
+sorting = "random"
+
+[any]
+path = "/home/milesj/Pictures/wallpapers/others"
