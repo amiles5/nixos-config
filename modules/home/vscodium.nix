@@ -27,7 +27,7 @@ in
       # nix-shell suport 
       arrterian.nix-env-selector
       # python
-      ms-python.python
+##############     ms-python.python
       # C/C++
       ms-vscode.cpptools
       # OCaml
