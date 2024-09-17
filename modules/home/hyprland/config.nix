@@ -21,6 +21,7 @@
 	"wpaperd -d"
         ## App auto start
         "[workspace 2 silent] kitty"
+        "[workspace 3 silent] nautilus"
         "[workspace 5 silent] floorp"
       ];
 
@@ -226,8 +227,12 @@
         ",XF86AudioStop, exec, playerctl stop"
         "$mainMod, mouse_down, workspace, e-1"
         "$mainMod, mouse_up, workspace, e+1"
-
-        # laptop brigthness
+#       "bind = ALT, Tab, workspace, m+1"
+        "bind = ALT, Tab, workspace, e+1"
+#       "bind = ALT SHIFT, Tab, workspace, m-1"
+        "bind = ALT SHIFT, Tab, workspace, e-1"
+        
+	# laptop brigthness
         ",XF86MonBrightnessUp, exec, brightnessctl set 5%+"
         ",XF86MonBrightnessDown, exec, brightnessctl set 5%-"
         "$mainMod, XF86MonBrightnessUp, exec, brightnessctl set 100%+"
@@ -282,7 +287,8 @@
         "opacity 1.0 override 1.0 override, class:(Unity)"
         "opacity 1.0 override 1.0 override, class:(floorp)"
         "opacity 1.0 override 1.0 override, class:(evince)"
-        "workspace 1, class:^(floorp)$"
+        "workspace 5, class:^(floorp)$"
+        "workspace 3, class:^(nautilus)$"
         "workspace 4, class:^(discord)$"
         "workspace 4, class:^(Gimp-2.10)$"
         "workspace 4, class:^(Aseprite)$"
