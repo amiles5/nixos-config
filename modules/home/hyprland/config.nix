@@ -227,10 +227,10 @@
         ",XF86AudioStop, exec, playerctl stop"
         "$mainMod, mouse_down, workspace, e-1"
         "$mainMod, mouse_up, workspace, e+1"
-#       "bind = ALT, Tab, workspace, m+1"
-        "bind = ALT, Tab, workspace, e+1"
-#       "bind = ALT SHIFT, Tab, workspace, m-1"
-        "bind = ALT SHIFT, Tab, workspace, e-1"
+#       "bind = ALT, Tab, workspace, e+1"
+        "bind = $mainMod, Tab, workspace, e+1"
+#       "bind = ALT SHIFT, Tab, workspace, e-1"
+        "bind = $mainMod SHIFT, Tab, workspace, e-1"
         
 	# laptop brigthness
         ",XF86MonBrightnessUp, exec, brightnessctl set 5%+"
