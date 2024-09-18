@@ -8,3 +8,6 @@ then
 else
   runbg waybar
 fi
+
+pkill -9  wpaperd
+runbg   wpaperd -d
