@@ -23,6 +23,7 @@
         "[workspace 2 silent] kitty"
         "[workspace 3 silent] nautilus"
         "[workspace 4 silent] floorp"
+        "[workspace 5 silent] noson-app"
       ];
 
       input = {
