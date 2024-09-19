@@ -18,7 +18,7 @@
       enable_audio_bell = false;
       mouse_hide_wait = 60;
       copy_on_select = true;
-#     mouse_map right press ungrabbed paste_from_selection
+      mouse_map = "middle release ungrabbed paste_from_clipboard";
 
       ## Tabs
       tab_title_template = "{index}";

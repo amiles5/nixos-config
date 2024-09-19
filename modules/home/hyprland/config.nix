@@ -22,7 +22,7 @@
         ## App auto start
         "[workspace 2 silent] kitty"
         "[workspace 3 silent] nautilus"
-        "[workspace 5 silent] floorp"
+        "[workspace 4 silent] floorp"
       ];
 
       input = {
@@ -162,6 +162,7 @@
         "$mainMod, J, togglesplit,"
         "$mainMod, T, exec, toggle_oppacity"
         "$mainMod, E, exec, nautilus"
+        "$mainMod, M, exec, noson-app"
         "$mainMod SHIFT, B, exec, toggle_waybar"
         "$mainMod, C ,exec, hyprpicker -a"
         "$mainMod, W,exec, wallpaper-picker"
@@ -253,6 +254,7 @@
         "float,qView"
         "center,qView"
         "size 1200 725,qView"
+        "size 800 650,noson-gui"
         "float,imv"
         "center,imv"
         "size 1200 725,imv"
@@ -302,6 +304,7 @@
         "size 850 500,title:^(File Upload)$"
         "float,class:^(pavucontrol)$"
         "float,class:^(SoundWireServer)$"
+        "float,class:^(noson-gui)$"
         "float,class:^(.sameboy-wrapped)$"
         "float,class:^(file_progress)$"
         "float,class:^(confirm)$"
