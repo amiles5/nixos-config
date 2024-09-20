@@ -331,6 +331,7 @@
 
     extraConfig = "
       monitor=,preferred,auto,2
+      monitor=FALLBACK,1920x1080@60,auto,1
 
       xwayland {
         force_zero_scaling = true
