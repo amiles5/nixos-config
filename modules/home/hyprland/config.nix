@@ -16,7 +16,8 @@
         "waybar &"
         "swaync &"
         "wl-paste --watch cliphist store &"
-        "hyprlock"
+#       "hyprlock"
+        "swaylock"
         "hypridle"
 	"wpaperd -d"
         ## App auto start
