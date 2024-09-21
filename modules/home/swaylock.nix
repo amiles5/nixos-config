@@ -7,8 +7,8 @@
       image = "~/Pictures/wallpapers/others/Fantasy-Hongkong.png";
       clock=true;
       daemonize=true;
-      # timestr="%H:%M";
-      datestr = "";
+#     timestr="%H:%M";
+#     datestr = "";
 #     screenshots = true;
       ignore-empty-password=true;
       indicator = true;
