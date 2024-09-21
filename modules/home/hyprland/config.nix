@@ -22,7 +22,7 @@
 	"wpaperd -d"
         ## App auto start
         "[workspace 2 silent] kitty"
-        "[workspace 3 silent] nautilus"
+#       "[workspace 3 silent] nautilus"
         "[workspace 5 silent] floorp"
         "[workspace 4 silent] noson-app"
       ];
