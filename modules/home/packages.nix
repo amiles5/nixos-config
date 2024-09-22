@@ -77,7 +77,7 @@ in
     samba4Full
     hypridle
     wpaperd
-    soco-cli
+    whatsapp-for-linux
     noson
     # C / C++
     gcc
