@@ -228,12 +228,14 @@
         ",XF86AudioNext,exec, playerctl next"
         ",XF86AudioPrev,exec, playerctl previous"
         ",XF86AudioStop, exec, playerctl stop"
-        "$mainMod, mouse_down, workspace, e-1"
-        "$mainMod, mouse_up, workspace, e+1"
-#       "bind = ALT, Tab, workspace, e+1"
+#       "$mainMod, mouse_down, workspace, e-1"        
+        "$mainMod, mouse_down, workspace, r-1"   #######  r is for nextworkspace. e is for next active workspace
+#       "$mainMod, mouse_up, workspace, e+1"
+        "$mainMod, mouse_up, workspace, r+1"
         "bind = $mainMod, Tab, workspace, e+1"
-#       "bind = ALT SHIFT, Tab, workspace, e-1"
+#       "bind = $mainMod, Tab, workspace, r+1"
         "bind = $mainMod SHIFT, Tab, workspace, e-1"
+#       "bind = $mainMod SHIFT, Tab, workspace, r-1"
         
 	# laptop brigthness
         ",XF86MonBrightnessUp, exec, brightnessctl set 5%+"
