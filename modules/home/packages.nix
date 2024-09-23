@@ -56,6 +56,7 @@ in
     pipes                             # terminal screensaver
     sl
     tty-clock                         # cli clock
+    icloudpd
 
     ## GUI Apps
     audacity
