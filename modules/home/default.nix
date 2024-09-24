@@ -9,7 +9,7 @@
     ./fastfetch.nix                         # fetch tool
     ./floorp/floorp.nix               # firefox based browser
     ./fzf.nix                         # fuzzy finder
-    ./gaming.nix                      # packages related to gaming
+#   ./gaming.nix                      # packages related to gaming
     ./git.nix                         # version control
     ./gnome.nix                         # gnome apps
     ./gtk.nix                         # gtk theme
@@ -19,7 +19,7 @@
     ./micro.nix                       # nano replacement
     ./nvim.nix                        # neovim editor
     ./packages.nix                    # other packages
-    ./retroarch.nix  
+#   ./retroarch.nix  
     ./rofi.nix                        # launcher
     ./scripts/scripts.nix             # personal scripts
     ./spicetify.nix                   # spotify client

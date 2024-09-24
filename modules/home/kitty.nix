@@ -19,7 +19,7 @@
       mouse_hide_wait = 60;
       copy_on_select = true;
       mouse_map = "middle release ungrabbed paste_from_clipboard";
-
+      theme = "Gruvbox Dark Hard";
       ## Tabs
       tab_title_template = "{index}";
       active_tab_font_style = "normal";
