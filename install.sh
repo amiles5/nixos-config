@@ -102,6 +102,10 @@ install() {
     cp -r wallpapers/wallpaper.png ~/Pictures/wallpapers
     cp -r wallpapers/otherWallpaper/gruvbox/* ~/Pictures/wallpapers/others/
     cp -r wallpapers/otherWallpaper/nixos/* ~/Pictures/wallpapers/others/
+    # Copy the wallpapers
+    mkdir ~/.config/wpaperd
+    # Copy the copy the wpaperd toml config file
+    ln -s ~/nixos-config/scratch/config.toml ~/.config/wpaperd/config.toml
     sleep 0.2
 
     # Get the hardware configuration
