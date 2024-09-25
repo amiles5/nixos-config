@@ -20,10 +20,11 @@
         "hypridle"
 	"wpaperd -d"
         ## App auto start
-        "[workspace 2 silent] kitty"
+        "[workspace 1 silent] kitty"
+        "[workspace 2 silent] floorp"
         "[workspace 3 silent] nautilus"
-        "[workspace 5 silent] floorp"
         "[workspace 4 silent] noson-app"
+        "[workspace 5 silent] whatsapp-for-linux"
       ];
 
       input = {
@@ -143,10 +144,12 @@
         "$mainMod, F1, exec, show-keybinds"
 
         # keybindings
-        "$mainMod, Return, exec, kitty"
-        "ALT, Return, exec, kitty --title float_kitty"
+#       "$mainMod, Return, exec, kitty"
+        "$mainMod, Return, exec, hyprctl dispatch exec '[workspace 1 silent] kitty'"
+        "$mainMod, Return, exec, hyprctl dispatch exec '[workspace 4 silent] noson-app'"
+        "$mainMod, B, exec, hyprctl dispatch exec '[workspace 2 silent] floorp'"
         "$mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'"
-        "$mainMod, B, exec, hyprctl dispatch exec '[workspace 5 silent] floorp'"
+        "ALT, Return, exec, kitty --title float_kitty"
         "$mainMod, Q, killactive,"
         "$mainMod, F, fullscreen, 0"
         "$mainMod SHIFT, F, fullscreen, 1"
@@ -163,7 +166,7 @@
         "$mainMod, J, togglesplit,"
 #       "$mainMod, T, exec, toggle_oppacity"
         "$mainMod, E, exec, nautilus"
-        "$mainMod, M, exec, noson-app"
+#       "$mainMod, M, exec, noson-app"
         "$mainMod, T, exec, whatsapp-for-linux"
         "$mainMod SHIFT, B, exec, toggle_waybar"
         "$mainMod, C ,exec, hyprpicker -a"
