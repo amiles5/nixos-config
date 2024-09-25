@@ -7,6 +7,7 @@
     openssh.enable = true;
     tailscale.enable = true;
     fstrim.enable = true;
+    hardware.bolt.enable = true;
   };
 
 services.printing = {
