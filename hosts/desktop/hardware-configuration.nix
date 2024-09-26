@@ -24,10 +24,16 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
-  fileSystems."/mnt/clonezilla" =
+  fileSystems."/mnt/ventoy-img" =
     { device = "/dev/disk/by-uuid/230bf232-6d96-4e7d-bae2-9144f758d41a";
       fsType = "ext4";
-      options = [ "noauto"];
+      options = [ "noauto" "uid=1000" "gid=100"];
+    };
+
+ fileSystems."/mnt/ventoy-iso" =
+    { device = "/dev/disk/by-uuid/1C11-749A";
+      fsType = "exfat";
+      options = [ "noauto" "uid=1000" "gid=100"];
     };
 
  fileSystems."/mnt/roon_data" =
