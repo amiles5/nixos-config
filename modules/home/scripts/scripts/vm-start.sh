@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 # VM name
-vm_name="win10"
+vm_name="win11"
 export LIBVIRT_DEFAULT_URI="qemu:///system"
 
 # change workspace
