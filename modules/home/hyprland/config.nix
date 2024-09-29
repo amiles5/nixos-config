@@ -20,10 +20,10 @@
         "hypridle"
 	"wpaperd -d"
         ## App auto start
-        "[workspace 1 silent] kitty"
-        "[workspace 2 silent] floorp"
-        "[workspace 3 silent] nautilus"
-        "[workspace 4 silent] noson-app"
+#       "[workspace 1 silent] kitty"
+#       "[workspace 2 silent] floorp"
+#       "[workspace 3 silent] nautilus"
+#       "[workspace 4 silent] noson-app"
         "[workspace 5 silent] whatsapp-for-linux"
       ];
 
@@ -144,9 +144,7 @@
         "$mainMod, F1, exec, show-keybinds"
 
         # keybindings
-#       "$mainMod, Return, exec, kitty"
         "$mainMod, Return, exec, hyprctl dispatch exec '[workspace 1 silent] kitty'"
-        "$mainMod, M, exec, hyprctl dispatch exec '[workspace 4 silent] noson-app'"
         "$mainMod, E, exec, hyprctl dispatch exec '[workspace 3 silent] nautilus'"
         "$mainMod, B, exec, hyprctl dispatch exec '[workspace 2 silent] floorp'"
         "$mainMod, T, exec, hyprctl dispatch exec '[workspace 5 silent] whatsapp-for-linux'"
@@ -166,10 +164,6 @@
         "$mainMod SHIFT, Escape, exec, power-menu"
         "$mainMod, P, pseudo,"
         "$mainMod, J, togglesplit,"
-#       "$mainMod, T, exec, toggle_oppacity"
-#       "$mainMod, E, exec, nautilus"
-#       "$mainMod, M, exec, noson-app"
-#       "$mainMod, T, exec, whatsapp-for-linux"
         "$mainMod SHIFT, B, exec, toggle_waybar"
         "$mainMod, C ,exec, hyprpicker -a"
         "$mainMod, W,exec, wallpaper-picker"
@@ -254,8 +248,8 @@
 
       # mouse binding
       bindm = [
-        "$mainMod, mouse:272, movewindow"
-        "$mainMod, mouse:273, resizewindow"
+        "$mainMod, mouse:273, movewindow"
+        "$mainMod, mouse:272, resizewindow"
       ];
 
       # windowrule
@@ -263,7 +257,6 @@
         "float,qView"
         "center,qView"
         "size 1200 725,qView"
-        "size 800 650,noson-gui"
         "size 1200 800,whatsapp-for-linux"
         "float,imv"
         "center,imv"
@@ -314,7 +307,6 @@
         "size 850 500,title:^(File Upload)$"
         "float,class:^(pavucontrol)$"
         "float,class:^(SoundWireServer)$"
-        "float,class:^(noson-gui)$"
         "float,class:^(whatsapp-for-linux)$"
         "float,class:^(.sameboy-wrapped)$"
         "float,class:^(file_progress)$"

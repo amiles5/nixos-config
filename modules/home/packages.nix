@@ -57,6 +57,7 @@ in
     sl
     tty-clock                         # cli clock
     icloudpd
+    file
 
     ## GUI Apps
     audacity
