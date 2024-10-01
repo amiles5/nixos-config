@@ -1,7 +1,7 @@
 {inputs, username, host, ...}: {
   imports = [
     ./aseprite/aseprite.nix           # pixel art editor
-    ./audacious.nix                   # music player
+#   ./audacious.nix                   # music player
     ./bat.nix                         # better cat command
     ./btop.nix                        # resouces monitor 
     ./cava.nix                        # audio visualizer
@@ -22,10 +22,10 @@
 #   ./retroarch.nix  
     ./rofi.nix                        # launcher
     ./scripts/scripts.nix             # personal scripts
-    ./spicetify.nix                   # spotify client
+#   ./spicetify.nix                   # spotify client
     ./starship.nix                    # shell prompt
     ./swaylock.nix                    # lock screen
-    ./vscodium.nix                    # vscode forck
+#   ./vscodium.nix                    # vscode forck
     ./waybar                          # status bar
     ./xdg-mimes.nix                   # xdg config
     ./zsh.nix                         # shell

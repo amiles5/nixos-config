@@ -22,9 +22,9 @@
         ## App auto start
 #       "[workspace 1 silent] kitty"
 #       "[workspace 2 silent] floorp"
-#       "[workspace 3 silent] nautilus"
+#       "[workspace 3 silent] "
 #       "[workspace 4 silent] noson-app"
-        "[workspace 5 silent] whatsapp-for-linux"
+#       "[workspace 5 silent] whatsapp-for-linux"
       ];
 
       input = {
@@ -144,15 +144,30 @@
         "$mainMod, F1, exec, show-keybinds"
 
         # keybindings
-        "$mainMod, Return, exec, hyprctl dispatch exec '[workspace 1 silent] kitty'"
-        "$mainMod, E, exec, hyprctl dispatch exec '[workspace 3 silent] nautilus'"
-        "$mainMod, B, exec, hyprctl dispatch exec '[workspace 2 silent] floorp'"
-        "$mainMod, T, exec, hyprctl dispatch exec '[workspace 5 silent] whatsapp-for-linux'"
-        "$mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'"
+
+# 	AJM Settings
+#################################################################################################################################
+	"$mainMod, Return, exec, hyprctl dispatch exec '[workspace 1  ] kitty'"
+        "$mainMod, F, exec, hyprctl dispatch exec '[workspace 2  ] kitty yazi'"
+        "$mainMod, B, exec, hyprctl dispatch exec '[workspace 3  ] floorp'"
+        "$mainMod, C, exec, hyprctl dispatch exec '[workspace 4  ] whatsapp-for-linux'"
+        "$mainMod, M, exec, hyprctl dispatch exec '[workspace 5  ] noson-app'"
+##################################################################################################################################
+#
+# 	AJM Settings
+#################################################################################################################################
+#"$mainMod, Return, exec, hyprctl dispatch exec '[workspace 1 silent] kitty'"
+#       "$mainMod, F, exec, hyprctl dispatch exec '[workspace 2 silent] kitty yazi'"
+#       "$mainMod, B, exec, hyprctl dispatch exec '[workspace 3 silent] floorp'"
+#       "$mainMod, C, exec, hyprctl dispatch exec '[workspace 4 silent] whatsapp-for-linux'"
+#       "$mainMod, M, exec, hyprctl dispatch exec '[workspace 5 silent] noson-app'"
+##################################################################################################################################
+#
+	"$mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'"
         "ALT, Return, exec, kitty --title float_kitty"
         "$mainMod, Q, killactive,"
-        "$mainMod, F, fullscreen, 0"
-        "$mainMod SHIFT, F, fullscreen, 1"
+#       "$mainMod, F, fullscreen, 0"
+#       "$mainMod SHIFT, F, fullscreen, 1"
         "$mainMod, Space, togglefloating,"
         "$mainMod, Space, centerwindow,"
         "$mainMod, Space, resizeactive, exact 950 600"
@@ -165,7 +180,7 @@
         "$mainMod, P, pseudo,"
         "$mainMod, J, togglesplit,"
         "$mainMod SHIFT, B, exec, toggle_waybar"
-        "$mainMod, C ,exec, hyprpicker -a"
+#       "$mainMod, C ,exec, hyprpicker -a"
         "$mainMod, W,exec, wallpaper-picker"
         "$mainMod, N, exec, swaync-client -t -sw"
         "$mainMod SHIFT, W, exec, vm-start"
