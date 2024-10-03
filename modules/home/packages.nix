@@ -81,6 +81,8 @@ in
     wpaperd
     whatsapp-for-linux
     noson
+#   nwg-look
+    xsettingsd
     # C / C++
     gcc
     gdb

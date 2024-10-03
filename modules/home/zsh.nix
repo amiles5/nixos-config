@@ -16,6 +16,7 @@
     '';
     initExtra = ''
       "fastfetch"  
+      cd nixos-config
       setopt share_history 
       setopt hist_expire_dups_first
       setopt hist_ignore_dups

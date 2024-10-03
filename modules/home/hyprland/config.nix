@@ -19,7 +19,8 @@
         "swaylock"
         "hypridle"
 	"wpaperd -d"
-        ## App auto start
+
+	## App auto start
 #       "[workspace 1 silent] kitty"
 #       "[workspace 2 silent] floorp"
 #       "[workspace 3 silent] "
@@ -273,6 +274,15 @@
         "center,qView"
         "size 1200 725,qView"
         "size 1200 800,whatsapp-for-linux"
+
+#       "size 1200 725,nwg-look"
+#       "center,nwg-look"
+#       "float,nwg-look"
+
+        "size 1200 725,io.github.janbar.noson"
+        "center,io.github.janbar.noson"
+        "float,io.github.janbar.noson"
+
         "float,imv"
         "center,imv"
         "size 1200 725,imv"
@@ -347,9 +357,15 @@
     };
 
     extraConfig = "
-      monitor=,preferred,auto,2
-      monitor=FALLBACK,1920x1080@60,auto,1
+#     monitor=,preferred,auto,auto
 
+      monitor=HDMI-A-1,1920x1080@60.00,auto,auto
+      monitor=HDMI-A-2,1920x1080@60.00,auto,auto
+
+#     monitor=HDMI-A-1,2560x1440@59.95,auto,auto
+#     monitor=HDMI-A-2,2560x1440@59.95,auto,auto
+
+      monitor=FALLBACK,1920x1080@60,auto,1
       xwayland {
         force_zero_scaling = true
       }
