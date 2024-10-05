@@ -1,8 +1,6 @@
-{ ... }: 
-{
+{...}: {
   wayland.windowManager.hyprland = {
     settings = {
-      
       # autostart
       exec-once = [
         "systemctl --user import-environment &"
@@ -10,7 +8,7 @@
         "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &"
         "nm-applet &"
         "wl-clip-persist --clipboard both"
-#       "swaybg -m fill -i $(find ~/Pictures/wallpapers/ -maxdepth 1 -type f) &"
+        #       "swaybg -m fill -i $(find ~/Pictures/wallpapers/ -maxdepth 1 -type f) &"
         "hyprctl setcursor Bibata-Modern-Ice 24 &"
         "poweralertd &"
         "waybar &"
@@ -18,19 +16,19 @@
         "wl-paste --watch cliphist store &"
         "swaylock"
         "hypridle"
-	"wpaperd -d"
+        "wpaperd -d"
 
-	## App auto start
-#       "[workspace 1 silent] kitty"
-#       "[workspace 2 silent] floorp"
-#       "[workspace 3 silent] "
-#       "[workspace 4 silent] noson-app"
-#       "[workspace 5 silent] whatsapp-for-linux"
+        ## App auto start
+        #       "[workspace 1 silent] kitty"
+        #       "[workspace 2 silent] floorp"
+        #       "[workspace 3 silent] "
+        #       "[workspace 4 silent] noson-app"
+        #       "[workspace 5 silent] whatsapp-for-linux"
       ];
 
       input = {
         kb_layout = "gb";
-        kb_options ="grp:alt_caps_toggle"; 
+        kb_options = "grp:alt_caps_toggle";
         numlock_by_default = true;
         follow_mouse = 1;
         float_switch_override_focus = 0;
@@ -44,9 +42,9 @@
       general = {
         "$mainMod" = "SUPER";
         layout = "dwindle";
-#       gaps_in = 0;
+        #       gaps_in = 0;
         gaps_in = 3;
-#       gaps_out = 0;
+        #       gaps_out = 0;
         gaps_out = 3;
         border_size = 2;
         "col.active_border" = "rgb(98971a) rgb(cc241d) 45deg";
@@ -146,29 +144,29 @@
 
         # keybindings
 
-# 	AJM Settings
-#################################################################################################################################
-	"$mainMod, Return, exec, hyprctl dispatch exec '[workspace 1  ] kitty'"
+        # 	AJM Settings
+        ##############################################################################################################
+        "$mainMod, Return, exec, hyprctl dispatch exec '[workspace 1  ] kitty'"
         "$mainMod, F, exec, hyprctl dispatch exec '[workspace 2  ] kitty yazi'"
         "$mainMod, B, exec, hyprctl dispatch exec '[workspace 3  ] floorp'"
         "$mainMod, C, exec, hyprctl dispatch exec '[workspace 4  ] whatsapp-for-linux'"
         "$mainMod, M, exec, hyprctl dispatch exec '[workspace 5  ] noson-app'"
-##################################################################################################################################
-#
-# 	AJM Settings
-#################################################################################################################################
-#"$mainMod, Return, exec, hyprctl dispatch exec '[workspace 1 silent] kitty'"
-#       "$mainMod, F, exec, hyprctl dispatch exec '[workspace 2 silent] kitty yazi'"
-#       "$mainMod, B, exec, hyprctl dispatch exec '[workspace 3 silent] floorp'"
-#       "$mainMod, C, exec, hyprctl dispatch exec '[workspace 4 silent] whatsapp-for-linux'"
-#       "$mainMod, M, exec, hyprctl dispatch exec '[workspace 5 silent] noson-app'"
-##################################################################################################################################
-#
-	"$mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'"
+        ###############################################################################################################
+        #
+        # 	AJM Settings
+        ###############################################################################################################
+        #"$mainMod, Return, exec, hyprctl dispatch exec '[workspace 1 silent] kitty'"
+        #       "$mainMod, F, exec, hyprctl dispatch exec '[workspace 2 silent] kitty yazi'"
+        #       "$mainMod, B, exec, hyprctl dispatch exec '[workspace 3 silent] floorp'"
+        #       "$mainMod, C, exec, hyprctl dispatch exec '[workspace 4 silent] whatsapp-for-linux'"
+        #       "$mainMod, M, exec, hyprctl dispatch exec '[workspace 5 silent] noson-app'"
+        ###############################################################################################################
+        #
+        "$mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'"
         "ALT, Return, exec, kitty --title float_kitty"
         "$mainMod, Q, killactive,"
-#       "$mainMod, F, fullscreen, 0"
-#       "$mainMod SHIFT, F, fullscreen, 1"
+        #       "$mainMod, F, fullscreen, 0"
+        #       "$mainMod SHIFT, F, fullscreen, 1"
         "$mainMod, Space, togglefloating,"
         "$mainMod, Space, centerwindow,"
         "$mainMod, Space, resizeactive, exact 950 600"
@@ -181,7 +179,7 @@
         "$mainMod, P, pseudo,"
         "$mainMod, J, togglesplit,"
         "$mainMod SHIFT, B, exec, toggle_waybar"
-#       "$mainMod, C ,exec, hyprpicker -a"
+        #       "$mainMod, C ,exec, hyprpicker -a"
         "$mainMod, W,exec, wallpaper-picker"
         "$mainMod, N, exec, swaync-client -t -sw"
         "$mainMod SHIFT, W, exec, vm-start"
@@ -243,16 +241,16 @@
         ",XF86AudioNext,exec, playerctl next"
         ",XF86AudioPrev,exec, playerctl previous"
         ",XF86AudioStop, exec, playerctl stop"
-#       "$mainMod, mouse_down, workspace, e-1"        
-        "$mainMod, mouse_down, workspace, r-1"   #######  r is for nextworkspace. e is for next active workspace
-#       "$mainMod, mouse_up, workspace, e+1"
+        #       "$mainMod, mouse_down, workspace, e-1"
+        "$mainMod, mouse_down, workspace, r-1" #######  r is for nextworkspace. e is for next active workspace
+        #       "$mainMod, mouse_up, workspace, e+1"
         "$mainMod, mouse_up, workspace, r+1"
         "bind = $mainMod, Tab, workspace, e+1"
-#       "bind = $mainMod, Tab, workspace, r+1"
+        #       "bind = $mainMod, Tab, workspace, r+1"
         "bind = $mainMod SHIFT, Tab, workspace, e-1"
-#       "bind = $mainMod SHIFT, Tab, workspace, r-1"
-        
-	# laptop brigthness
+        #       "bind = $mainMod SHIFT, Tab, workspace, r-1"
+
+        # laptop brigthness
         ",XF86MonBrightnessUp, exec, brightnessctl set 5%+"
         ",XF86MonBrightnessDown, exec, brightnessctl set 5%-"
         "$mainMod, XF86MonBrightnessUp, exec, brightnessctl set 100%+"
@@ -275,9 +273,9 @@
         "size 1200 725,qView"
         "size 1200 800,whatsapp-for-linux"
 
-#       "size 1200 725,nwg-look"
-#       "center,nwg-look"
-#       "float,nwg-look"
+        #       "size 1200 725,nwg-look"
+        #       "center,nwg-look"
+        #       "float,nwg-look"
 
         "size 1200 725,io.github.janbar.noson"
         "center,io.github.janbar.noson"
@@ -317,13 +315,13 @@
         "opacity 1.0 override 1.0 override, class:(Unity)"
         "opacity 1.0 override 1.0 override, class:(floorp)"
         "opacity 1.0 override 1.0 override, class:(evince)"
-#       "workspace 5, class:^(floorp)$"
-#       "workspace 3, class:^(nautilus)$"
+        #       "workspace 5, class:^(floorp)$"
+        #       "workspace 3, class:^(nautilus)$"
         "workspace 4, class:^(discord)$"
         "workspace 4, class:^(Gimp-2.10)$"
         "workspace 4, class:^(Aseprite)$"
-#       "workspace 5, class:^(Audacious)$"
-#       "workspace 5, class:^(Spotify)$"
+        #       "workspace 5, class:^(Audacious)$"
+        #       "workspace 5, class:^(Spotify)$"
         "idleinhibit focus, class:^(mpv)$"
         "idleinhibit fullscreen, class:^(firefox)$"
         "float,class:^(zenity)$"
@@ -353,7 +351,6 @@
         "maxsize 1 1,class:^(xwaylandvideobridge)$"
         "noblur,class:^(xwaylandvideobridge)$"
       ];
-
     };
 
     extraConfig = "

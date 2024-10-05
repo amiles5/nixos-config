@@ -1,13 +1,19 @@
-{ pkgs, host, ... }:
 {
+  pkgs,
+  host,
+  ...
+}: {
   programs.kitty = {
     enable = true;
 
-#   theme = "Gruvbox Dark Hard";
-    
+    #   theme = "Gruvbox Dark Hard";
+
     font = {
       name = "FiraCode Nerd Font";
-      size = if (host == "laptop") then 14 else 16;
+      size =
+        if (host == "laptop")
+        then 14
+        else 16;
     };
 
     settings = {
@@ -32,7 +38,7 @@
       inactive_tab_background = "#3C3836";
     };
 
-    keybindings = {  
+    keybindings = {
       ## Tabs
       "alt+1" = "goto_tab 1";
       "alt+2" = "goto_tab 2";

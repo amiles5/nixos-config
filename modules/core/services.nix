@@ -1,5 +1,4 @@
-{ pkgs,... }: 
-{
+{pkgs, ...}: {
   services = {
     gvfs.enable = true;
     gnome.gnome-keyring.enable = true;
@@ -10,29 +9,29 @@
     hardware.bolt.enable = true;
   };
 
-services.printing = {
-      enable = true;
+  services.printing = {
+    enable = true;
     browsing = true;
     defaultShared = true;
-    listenAddresses = [ "*:631" ];
-    drivers = [ pkgs.cups-brother-hl1210w ];
-    allowFrom = [ "all" ];
+    listenAddresses = ["*:631"];
+    drivers = [pkgs.cups-brother-hl1210w];
+    allowFrom = ["all"];
     extraConf = ''
       DefaultPaperSize A4
     '';
-    };
+  };
 
-services.avahi = {
-  enable = true;
-  nssmdns4 = true;
-  openFirewall = true;
-  publish = {
+  services.avahi = {
     enable = true;
-    userServices = true;
+    nssmdns4 = true;
+    openFirewall = true;
+    publish = {
+      enable = true;
+      userServices = true;
     };
-  }; 
+  };
 
-services.logind.extraConfig = ''
+  services.logind.extraConfig = ''
     # don’t shutdown when power button is short-pressed
     HandlePowerKey=ignore
   '';

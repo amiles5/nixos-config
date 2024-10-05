@@ -1,5 +1,10 @@
-{ hostname, config, pkgs, host, ...}: 
 {
+  hostname,
+  config,
+  pkgs,
+  host,
+  ...
+}: {
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -7,7 +12,7 @@
     syntaxHighlighting.enable = true;
     oh-my-zsh = {
       enable = true;
-      plugins = [ ];
+      plugins = [];
     };
     initExtraFirst = ''
       DISABLE_AUTO_UPDATE=true
@@ -15,13 +20,13 @@
       export "MICRO_TRUECOLOR=1"
     '';
     initExtra = ''
-      "fastfetch"  
+      "fastfetch"
       cd nixos-config
-      setopt share_history 
+      setopt share_history
       setopt hist_expire_dups_first
       setopt hist_ignore_dups
       setopt hist_verify
-      
+
       # Use fd (https://github.com/sharkdp/fd) for listing path candidates.
       # - The first argument to the function ($1) is the base path to start traversal
       # - See the source code (completion.{bash,zsh}) for the details.
@@ -53,9 +58,9 @@
       c = "clear";
       cd = "z";
       tt = "gtrash put";
-#     cat = "bat";
+      #     cat = "bat";
       nano = "micro";
-#     code = "codium";
+      #     code = "codium";
       py = "python";
       icat = "kitten icat";
       dsize = "du -hs";
@@ -69,7 +74,7 @@
       tree = "eza --icons --tree --group-directories-first";
 
       # Nixos
-#     cdnix = "cd ~/nixos-config && codium ~/nixos-config";
+      #     cdnix = "cd ~/nixos-config && codium ~/nixos-config";
       ns = "nom-shell --run zsh";
       nix-switch = "nh os switch";
       fr = "nh os switch";
