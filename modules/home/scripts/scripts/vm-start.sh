@@ -5,7 +5,7 @@ vm_name="win11"
 export LIBVIRT_DEFAULT_URI="qemu:///system"
 
 # change workspace
-hyprctl dispatch workspace 6
+hyprctl dispatch workspace 2
 
 virsh start ${vm_name}
 virt-viewer -f -w -a ${vm_name}
