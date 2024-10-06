@@ -83,6 +83,7 @@ in {
     wpaperd
     whatsapp-for-linux
     noson
+    gittyup
     #   nwg-look
     xsettingsd
     # C / C++

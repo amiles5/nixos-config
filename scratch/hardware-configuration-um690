@@ -26,7 +26,7 @@
 
   fileSystems."/mnt/backup_images" =
     { device = "//192.168.1.250/backup_images";
-      fsType = "cifs"
+      fsType = "cifs";
       options = [ "credentials=/etc/samba/cred" "uid=1000" "gid=100"];
     };
 

@@ -13,7 +13,7 @@
       size =
         if (host == "laptop")
         then 14
-        else 16;
+        else 14;
     };
 
     settings = {
