@@ -34,6 +34,5 @@
     ./waybar # status bar
     ./xdg-mimes.nix # xdg config
     ./zsh.nix # shell
-    ./whatsapp.nix # shell
   ];
 }
