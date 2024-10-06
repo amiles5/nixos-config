@@ -18,7 +18,7 @@
 
     settings = {
       confirm_os_window_close = 0;
-#     background_opacity = "0.75";
+      #     background_opacity = "0.75";
       background_opacity = "0.7";
       window_padding_width = 10;
       scrollback_lines = 10000;
@@ -27,7 +27,7 @@
       copy_on_select = true;
       mouse_map = "middle release ungrabbed paste_from_clipboard";
       theme = "Gruvbox Dark Hard";
-#     theme = "Box";
+      #     theme = "Box";
       ## Tabs
       tab_title_template = "{index}";
       active_tab_font_style = "normal";
