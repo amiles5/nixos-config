@@ -17,7 +17,8 @@
         "swaylock"
         "hypridle"
         "wpaperd -d"
-
+#       "nwg-dock-hyprland  -i 36 -d -c 'rofi -show drun'"
+        "nwg-dock-hyprland -i 36 -w 5 -mb 10 -ml 10 -mr 10 -x -c 'rofi -show drun' -lp start"
         ## App auto start
         #       "[workspace 1 silent] kitty"
         #       "[workspace 2 silent] floorp"
@@ -151,17 +152,12 @@
         "$mainMod, B, exec, hyprctl dispatch exec '[workspace 3  ] floorp'"
         "$mainMod, C, exec, hyprctl dispatch exec '[workspace 4  ] whatsapp-for-linux'"
         "$mainMod, M, exec, hyprctl dispatch exec '[workspace 5  ] noson-app'"
+        "$mainMod SHIFT, D, exec, nwg-dock-hyprland -i 36 -w 5 -mb 10 -ml 10 -mr 10 -x -c 'rofi -show drun' -lp start"
+        "$mainMod SHIFT, B, exec, toggle_waybar"
+        "$mainMod, W,exec, wallpaper-picker"
+        "$mainMod SHIFT, W, exec, vm-start"
+        "$mainMod SHIFT, Escape, exec, power-menu"
         ###############################################################################################################
-        #
-        # 	AJM Settings
-        ###############################################################################################################
-        #"$mainMod, Return, exec, hyprctl dispatch exec '[workspace 1 silent] kitty'"
-        #       "$mainMod, F, exec, hyprctl dispatch exec '[workspace 2 silent] kitty yazi'"
-        #       "$mainMod, B, exec, hyprctl dispatch exec '[workspace 3 silent] floorp'"
-        #       "$mainMod, C, exec, hyprctl dispatch exec '[workspace 4 silent] whatsapp-for-linux'"
-        #       "$mainMod, M, exec, hyprctl dispatch exec '[workspace 5 silent] noson-app'"
-        ###############################################################################################################
-        #
         "$mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'"
         "ALT, Return, exec, kitty --title float_kitty"
         "$mainMod, Q, killactive,"
@@ -171,18 +167,14 @@
         "$mainMod, Space, centerwindow,"
         "$mainMod, Space, resizeactive, exact 950 600"
         "$mainMod, D, exec, rofi -show drun"
-        "$mainMod SHIFT, D, exec, hyprctl dispatch exec '[workspace 4 silent] discord --enable-features=UseOzonePlatform --ozone-platform=wayland'"
-        "$mainMod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
+#       "$mainMod SHIFT, D, exec, hyprctl dispatch exec '[workspace 4 silent] discord --enable-features=UseOzonePlatform --ozone-platform=wayland'"
+#       "$mainMod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
         "$mainMod, Escape, exec, swaylock"
         "ALT, Escape, exec, hyprlock"
-        "$mainMod SHIFT, Escape, exec, power-menu"
         "$mainMod, P, pseudo,"
         "$mainMod, J, togglesplit,"
-        "$mainMod SHIFT, B, exec, toggle_waybar"
         #       "$mainMod, C ,exec, hyprpicker -a"
-        "$mainMod, W,exec, wallpaper-picker"
         "$mainMod, N, exec, swaync-client -t -sw"
-        "$mainMod SHIFT, W, exec, vm-start"
 
         # screenshot
         "$mainMod, Print, exec, grimblast --notify --cursor --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"

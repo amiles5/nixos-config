@@ -84,7 +84,9 @@ in {
     whatsapp-for-linux
     noson
     gittyup
-    #   nwg-look
+    nwg-look
+    nwg-dock-hyprland
+    nwg-displays
     xsettingsd
     # C / C++
     gcc

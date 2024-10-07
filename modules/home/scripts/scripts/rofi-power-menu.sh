@@ -81,7 +81,7 @@ while true; do
             echo "rofi-power-menu - a power menu mode for Rofi"
             echo
             echo "Usage: rofi-power-menu [--choices CHOICES] [--confirm CHOICES]"
-            echo "                       [--choose CHOICE] [--dry-run] [--symbols|--no-symbols]"
+           echo "                       [--choose CHOICE] [--dry-run] [--symbols|--no-symbols]"
             echo
             echo "Use with Rofi in script mode. For instance, to ask for shutdown or reboot:"
             echo
