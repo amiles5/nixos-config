@@ -24,30 +24,6 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
-  fileSystems."/mnt/backup_images" =
-    { device = "//192.168.1.250/backup_images";
-      fsType = "cifs";
-      options = [ "noauto" "credentials=/etc/samba/cred" "uid=1000" "gid=100"];
-    };
-
-  fileSystems."/mnt/roon_data" =
-    { device = "//192.168.1.250/roon_data_yakov";
-      fsType = "cifs";
-      options = [ "noauto" "credentials=/etc/samba/cred" "uid=1000" "gid=100"];
-    };
-
-  fileSystems."/mnt/ventoy-iso" =
-    { device = "/dev/disk/by-uuid/1C11-749A";
-      fsType = "exfat";
-      options = [ "noauto"];
-    };
-
-  fileSystems."/mnt/ventoy-img" =
-    { device = "/dev/disk/by-uuid/230bf232-6d96-4e7d-bae2-9144f758d41a";
-      fsType = "ext4";
-      options = [ "noauto"];
-    };
-
   swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
@@ -56,8 +32,6 @@
   # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
   networking.useDHCP = lib.mkDefault true;
   # networking.interfaces.eno1.useDHCP = lib.mkDefault true;
-  # networking.interfaces.tailscale0.useDHCP = lib.mkDefault true;
-  # networking.interfaces.virbr0.useDHCP = lib.mkDefault true;
   # networking.interfaces.wlp3s0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";

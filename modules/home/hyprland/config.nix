@@ -18,7 +18,7 @@
         "hypridle"
         "wpaperd -d"
 #       "nwg-dock-hyprland  -i 36 -d -c 'rofi -show drun'"
-        "nwg-dock-hyprland -i 36 -w 5 -mb 10 -ml 10 -mr 10 -x -c 'rofi -show drun' -lp start"
+#       "nwg-dock-hyprland -i 36 -w 5 -mb 10 -ml 10 -mr 10 -x -c 'rofi -show drun' -lp start"
         ## App auto start
         #       "[workspace 1 silent] kitty"
         #       "[workspace 2 silent] floorp"
