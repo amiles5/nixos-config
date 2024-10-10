@@ -79,6 +79,7 @@ in {
     tidal-hifi
     tidal-dl
     samba4Full
+    rpi-imager
     hypridle
     wpaperd
     whatsapp-for-linux
