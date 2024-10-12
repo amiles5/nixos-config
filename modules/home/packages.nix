@@ -89,6 +89,7 @@ in {
     nwg-dock-hyprland
     nwg-displays
     xsettingsd
+    kmymoney
     # C / C++
     gcc
     gdb

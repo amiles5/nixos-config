@@ -114,7 +114,8 @@ in {
         default = ["<span foreground='${blue}'> </span>"];
       };
       scroll-step = 5;
-      on-click = "pamixer -t";
+      on-click-right = "pamixer -t";
+      on-click = "pavucontrol";
     };
     battery = {
       format = "<span foreground='${yellow}'>{icon}</span> {capacity}%";

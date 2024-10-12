@@ -290,10 +290,9 @@
         "float,udiskie"
         "float,title:^(Transmission)$"
         "float,title:^(Volume Control)$"
+        "center,title:^(Volume Control)$"
         "float,title:^(Firefox — Sharing Indicator)$"
         "move 0 0,title:^(Firefox — Sharing Indicator)$"
-        "size 700 450,title:^(Volume Control)$"
-        "move 40 55%,title:^(Volume Control)$"
       ];
 
       # windowrulev2
@@ -320,7 +319,7 @@
         "center,class:^(zenity)$"
         "size 850 500,class:^(zenity)$"
         "size 850 500,title:^(File Upload)$"
-        "float,class:^(pavucontrol)$"
+#       "float,class:^(pavucontrol)$"
         "float,class:^(SoundWireServer)$"
         "float,class:^(whatsapp-for-linux)$"
         "float,class:^(.sameboy-wrapped)$"
