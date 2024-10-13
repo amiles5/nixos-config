@@ -62,7 +62,7 @@ in {
     file
 
     ## GUI Apps
-    audacity
+#   audacity
     bleachbit # cache cleaner
     gimp
     libreoffice
@@ -90,10 +90,14 @@ in {
     nwg-displays
     xsettingsd
     kmymoney
+#   strawberry-qt6
+    strawberry
     # C / C++
     gcc
     gdb
     gnumake
+    digikam
+
 
     # Python
     python3
