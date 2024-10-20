@@ -90,8 +90,8 @@ in {
     nwg-displays
     xsettingsd
     kmymoney
-#   strawberry-qt6
     strawberry
+    angryipscanner
     # C / C++
     gcc
     gdb

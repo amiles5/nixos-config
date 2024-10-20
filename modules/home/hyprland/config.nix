@@ -67,7 +67,7 @@
       };
 
       dwindle = {
-        no_gaps_when_only = true;
+#       no_gaps_when_only = true;
         force_split = 0;
         special_scale_factor = 1.0;
         split_width_multiplier = 1.0;
@@ -79,7 +79,7 @@
       master = {
         new_status = "master";
         special_scale_factor = 1;
-        no_gaps_when_only = false;
+#       no_gaps_when_only = false;
       };
 
       decoration = {
@@ -289,12 +289,12 @@
         "idleinhibit focus,mpv"
         "float,udiskie"
         "float,title:^(Transmission)$"
-        "float,title:^(Strawberry Music Player)$"
-        "float,title:^(digiKam)$"
-        "center,title:^(Strawberry Music Player)$"
         "center,title:^(digiKam)$"
+        "float,title:^(digiKam)$"
+        "float,title:^(digiKam)$"
+        "float,title:^(Strawberry Music Player)$"
+        "center,title:^(Strawberry Music Player)$"
         "size 950 600,title:^(Strawberry Music Player)$"
-        "size 950 600,title:^(digiKam)$"
         "float,title:^(Volume Control)$"
         "center,title:^(Volume Control)$"
         "float,title:^(Firefox — Sharing Indicator)$"
