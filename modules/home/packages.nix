@@ -91,8 +91,11 @@ in {
     xsettingsd
     kmymoney
     strawberry
-    angryipscanner
-    # C / C++
+    transmission_4
+#   angryipscanner
+
+
+# C / C++
     gcc
     gdb
     gnumake

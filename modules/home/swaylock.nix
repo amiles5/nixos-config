@@ -9,7 +9,7 @@
     enable = true;
     package = pkgs.swaylock-effects;
     settings = {
-      image = "~/Pictures/wallpapers/others/Fantasy-Hongkong.png";
+      image = "~/Pictures/wallpapers/others/cats-5.jpeg";
       clock = true;
       daemonize = true;
       #     timestr="%H:%M";
@@ -19,8 +19,6 @@
       indicator = true;
       indicator-radius = 200;
       indicator-thickness = 20;
-      effect-blur = "7x5";
-      effect-vignette = "0.75:0.75";
       effect-pixelate = 5;
       font = "JetBrainsMono Nerd Font";
       text-wrong-color = "FBF1C7FF";
