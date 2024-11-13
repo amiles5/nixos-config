@@ -47,7 +47,7 @@ in {
     valgrind # c memory analyzer
     wl-clipboard # clipboard utils for wayland (wl-copy, wl-paste)
     wget
-    yazi # terminal file manager
+    yazi # terminal file manager see https://github.com/NixOS/nixpkgs/issues/353119 for error 7zz-24.08 failed with exit code 2
     yt-dlp-light
     xdg-utils
     xxd
