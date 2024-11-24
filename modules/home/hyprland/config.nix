@@ -361,8 +361,11 @@
 #     monitor=HDMI-A-1,3840x2160@60.00,auto,1.875
 #     monitor=HDMI-A-2,3840x2160@60.00,auto,1.875
 
-      monitor=HDMI-A-1,3840x2160@60.00,auto,2.4
-      monitor=HDMI-A-2,3840x2160@60.00,auto,2.4
+      monitor=HDMI-A-1,1600x900@60.00,auto,1
+      monitor=HDMI-A-2,1600x900@60.00,auto,1
+
+#     monitor=HDMI-A-1,3840x2160@60.00,auto,2.4
+#     monitor=HDMI-A-2,3840x2160@60.00,auto,2.4
 
       monitor=FALLBACK,1920x1080@60,auto,1
 

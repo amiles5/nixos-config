@@ -92,8 +92,7 @@ in {
     kmymoney
     strawberry
     transmission_4
-#   angryipscanner
-
+    freecad-wayland
 
 # C / C++
     gcc
