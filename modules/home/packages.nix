@@ -51,6 +51,8 @@ in {
     yt-dlp-light
     xdg-utils
     xxd
+    blueman
+    bluez
 
     ## CLI
     cbonsai # terminal screensaver
@@ -93,6 +95,7 @@ in {
     strawberry
     transmission_4
     freecad-wayland
+    usbutils
 
 # C / C++
     gcc

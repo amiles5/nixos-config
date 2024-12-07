@@ -11,6 +11,7 @@
     openssh.enable = true;
     tailscale.enable = true;
     fstrim.enable = true;
+#   bluetooth.enable = true;
     hardware.bolt.enable = true;
   };
 
