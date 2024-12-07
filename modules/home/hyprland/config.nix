@@ -352,8 +352,8 @@
 
     extraConfig = "
 
-#     monitor=HDMI-A-1,1920x1080@60.00,auto,auto
-#     monitor=HDMI-A-2,1920x1080@60.00,auto,auto
+      monitor=HDMI-A-1,1920x1080@60.00,auto,auto
+      monitor=HDMI-A-2,1920x1080@60.00,auto,auto
 
 #     monitor=HDMI-A-1,2560x1440@59.95,auto,auto
 #     monitor=HDMI-A-2,2560x1440@59.95,auto,auto
@@ -361,8 +361,8 @@
 #     monitor=HDMI-A-1,3840x2160@60.00,auto,1.875
 #     monitor=HDMI-A-2,3840x2160@60.00,auto,1.875
 
-      monitor=HDMI-A-1,1600x900@60.00,auto,1
-      monitor=HDMI-A-2,1600x900@60.00,auto,1
+#     monitor=HDMI-A-1,1600x900@60.00,auto,1
+#     monitor=HDMI-A-2,1600x900@60.00,auto,1
 
 #     monitor=HDMI-A-1,3840x2160@60.00,auto,2.4
 #     monitor=HDMI-A-2,3840x2160@60.00,auto,2.4
