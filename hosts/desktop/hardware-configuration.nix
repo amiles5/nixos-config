@@ -38,7 +38,7 @@
   fileSystems."/mnt/ventoy-iso" =
     { device = "/dev/disk/by-uuid/1C11-749A";
       fsType = "exfat";
-      options = [ "noauto" ];
+      options = [ "noauto" "uid=1000" "gid=100" ];
     };
 
   fileSystems."/mnt/ventoy-img" =

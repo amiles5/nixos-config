@@ -1,0 +1,45 @@
+[2024-12-10 16:28:18.548] [info] Using configuration file /home/milesj/.config/waybar/config
+[2024-12-10 16:28:18.550] [info] Using CSS file /home/milesj/.config/waybar/style.css
+[2024-12-10 16:28:18.554] [info] Hyprland IPC starting
+[2024-12-10 16:28:18.554] [info] Loading persistent workspaces from Waybar config
+[2024-12-10 16:28:18.554] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-10 16:28:18.559] [warning] No batteries.
+[2024-12-10 16:28:18.674] [info] Bar configured (width: 1920, height: 30) for output: HDMI-A-2
+[2024-12-10 19:10:54.434] [info] Bar removed from output: HDMI-A-2
+[2024-12-10 19:10:55.112] [info] Loading persistent workspaces from Waybar config
+[2024-12-10 19:10:55.113] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-10 19:10:55.113] [warning] No batteries.
+[2024-12-10 19:10:55.222] [info] Bar configured (width: 1920, height: 30) for output: HDMI-A-2
+[2024-12-10 21:51:06.355] [warning] Failed to parse IPC message: moveworkspace>>3,FALLBACK, reason: Error parsing JSON: * Line 1, Column 1
+  Syntax error: value, object or array expected.
+
+[2024-12-10 21:51:06.357] [info] Bar removed from output: HDMI-A-2
+[2024-12-10 21:51:07.005] [info] Loading persistent workspaces from Waybar config
+[2024-12-10 21:51:07.005] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-10 21:51:07.006] [warning] No batteries.
+[2024-12-10 21:51:07.114] [info] Bar configured (width: 1920, height: 30) for output: HDMI-A-2
+[2024-12-11 02:39:41.039] [warning] Failed to parse IPC message: moveworkspace>>3,FALLBACK, reason: Error parsing JSON: * Line 1, Column 1
+  Syntax error: value, object or array expected.
+
+[2024-12-11 02:39:41.045] [info] Bar removed from output: HDMI-A-2
+[2024-12-11 02:39:41.702] [info] Loading persistent workspaces from Waybar config
+[2024-12-11 02:39:41.702] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-11 02:39:41.703] [warning] No batteries.
+[2024-12-11 02:39:41.812] [info] Bar configured (width: 1920, height: 30) for output: HDMI-A-2
+[2024-12-11 02:39:41.812] [error] Item '': No icon name or pixmap given.
+[2024-12-11 09:19:39.385] [warning] Failed to parse IPC message: moveworkspace>>3,FALLBACK, reason: Error parsing JSON: * Line 1, Column 1
+  Syntax error: value, object or array expected.
+
+[2024-12-11 09:19:39.392] [info] Bar removed from output: HDMI-A-2
+[2024-12-11 09:19:40.048] [info] Loading persistent workspaces from Waybar config
+[2024-12-11 09:19:40.048] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-11 09:19:40.049] [warning] No batteries.
+[2024-12-11 09:19:40.158] [info] Bar configured (width: 1920, height: 30) for output: HDMI-A-2
+[2024-12-11 12:30:23.730] [warning] Failed to parse IPC message: moveworkspace>>3,FALLBACK, reason: Error parsing JSON: * Line 1, Column 1
+  Syntax error: value, object or array expected.
+
+[2024-12-11 12:30:23.737] [info] Bar removed from output: HDMI-A-2
+[2024-12-11 12:30:25.332] [info] Loading persistent workspaces from Waybar config
+[2024-12-11 12:30:25.332] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-12-11 12:30:25.333] [warning] No batteries.
+[2024-12-11 12:30:25.442] [info] Bar configured (width: 1920, height: 30) for output: HDMI-A-2
