@@ -12,7 +12,7 @@
 #   ./cava.nix # audio visualizer
     ./discord/discord.nix # discord with catppuccin theme
     ./fastfetch.nix # fetch tool
-    ./floorp/floorp.nix # firefox based browser
+#   ./floorp/floorp.nix # firefox based browser
     ./fzf.nix # fuzzy finder
     #   ./gaming.nix                      # packages related to gaming
     ./git.nix # version control

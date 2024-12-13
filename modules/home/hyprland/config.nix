@@ -21,7 +21,6 @@
 #       "nwg-dock-hyprland -i 36 -w 5 -mb 10 -ml 10 -mr 10 -x -c 'rofi -show drun' -lp start"
         ## App auto start
         #       "[workspace 1 silent] kitty"
-        #       "[workspace 2 silent] floorp"
         #       "[workspace 3 silent] "
         #       "[workspace 4 silent] noson-app"
         #       "[workspace 5 silent] whatsapp-for-linux"
@@ -149,7 +148,7 @@
         ##############################################################################################################
         "$mainMod, Return, exec, hyprctl dispatch exec '[workspace 1  ] kitty'"
         "$mainMod, F, exec, hyprctl dispatch exec '[workspace 2  ] kitty yazi'"
-        "$mainMod, B, exec, hyprctl dispatch exec '[workspace 3  ] floorp'"
+        "$mainMod, B, exec, hyprctl dispatch exec '[workspace 3  ] firefox'"
         "$mainMod, C, exec, hyprctl dispatch exec '[workspace 4  ] whatsapp-for-linux'"
         "$mainMod, M, exec, hyprctl dispatch exec '[workspace 5  ] noson-app'"
         "$mainMod SHIFT, D, exec, nwg-dock-hyprland -i 36 -w 5 -mb 10 -ml 10 -mr 10 -x -c 'rofi -show drun' -lp start"
@@ -310,9 +309,8 @@
         "opacity 1.0 override 1.0 override, title:^(.*mpv.*)$"
         "opacity 1.0 override 1.0 override, class:(Aseprite)"
         "opacity 1.0 override 1.0 override, class:(Unity)"
-        "opacity 1.0 override 1.0 override, class:(floorp)"
+        "opacity 1.0 override 1.0 override, class:(firefox)"
         "opacity 1.0 override 1.0 override, class:(evince)"
-        #       "workspace 5, class:^(floorp)$"
         #       "workspace 3, class:^(nautilus)$"
         "workspace 4, class:^(discord)$"
         "workspace 4, class:^(Gimp-2.10)$"
@@ -352,8 +350,8 @@
 
     extraConfig = "
 
-      monitor=HDMI-A-1,1920x1080@60.00,auto,auto
-      monitor=HDMI-A-2,1920x1080@60.00,auto,auto
+#     monitor=HDMI-A-1,1920x1080@60.00,auto,auto
+#     monitor=HDMI-A-2,1920x1080@60.00,auto,auto
 
 #     monitor=HDMI-A-1,2560x1440@59.95,auto,auto
 #     monitor=HDMI-A-2,2560x1440@59.95,auto,auto
@@ -364,8 +362,8 @@
 #     monitor=HDMI-A-1,1600x900@60.00,auto,1
 #     monitor=HDMI-A-2,1600x900@60.00,auto,1
 
-#     monitor=HDMI-A-1,3840x2160@60.00,auto,2.4
-#     monitor=HDMI-A-2,3840x2160@60.00,auto,2.4
+      monitor=HDMI-A-1,3840x2160@60.00,auto,2.4
+      monitor=HDMI-A-2,3840x2160@60.00,auto,2.4
 
       monitor=FALLBACK,1920x1080@60,auto,1
 

@@ -44,6 +44,7 @@ in {
     toipe # typing test in the terminal
     ttyper # cli typing test
     unzip
+    firefox
     valgrind # c memory analyzer
     wl-clipboard # clipboard utils for wayland (wl-copy, wl-paste)
     wget
