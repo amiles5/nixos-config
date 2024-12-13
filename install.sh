@@ -99,6 +99,9 @@ install() {
 
     # Copy the wallpapers
     echo -e "Copying all ${MAGENTA}wallpapers${NORMAL}"
+    mkdir ~/Pictures
+    mkdir ~/Pictures/wallpapers
+    mkdir ~/Pictures/wallpapers/others
     cp -r wallpapers/wallpaper.png ~/Pictures/wallpapers
     cp -r wallpapers/otherWallpaper/gruvbox/* ~/Pictures/wallpapers/others/
     cp -r wallpapers/otherWallpaper/nixos/* ~/Pictures/wallpapers/others/

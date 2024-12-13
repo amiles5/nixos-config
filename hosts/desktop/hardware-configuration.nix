@@ -14,16 +14,17 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/e23eaa4d-24df-4d31-8070-20a355727db1";
+    { device = "/dev/disk/by-uuid/79e131b1-2062-4852-9981-345587013b9f";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/0E6D-7314";
+    { device = "/dev/disk/by-uuid/7346-579E";
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
-  fileSystems."/mnt/backup_images" =
+
+ fileSystems."/mnt/backup_images" =
     { device = "//192.168.1.250/backup_images";
       fsType = "cifs";
       options = [ "x-systemd.automount" "noauto" "credentials=/etc/samba/cred" "uid=1000" "gid=100"];
@@ -46,6 +47,7 @@
       fsType = "ext4";
       options = [ "noauto" ];
     };
+
   swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking

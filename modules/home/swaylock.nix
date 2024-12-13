@@ -9,7 +9,7 @@
     enable = true;
     package = pkgs.swaylock-effects;
     settings = {
-      image = "~/Pictures/wallpapers/others/cats-5.jpeg";
+      image = "~/Pictures/wallpapers/others/cats-wall-1.jpg";
       clock = true;
       daemonize = true;
       #     timestr="%H:%M";
@@ -19,7 +19,7 @@
       indicator = true;
       indicator-radius = 200;
       indicator-thickness = 20;
-      effect-pixelate = 5;
+      effect-pixelate = 3;
       font = "JetBrainsMono Nerd Font";
       text-wrong-color = "FBF1C7FF";
       text-ver-color = "FBF1C7FF";
