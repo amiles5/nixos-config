@@ -43,10 +43,10 @@
         "$mainMod" = "SUPER";
         layout = "dwindle";
         #       gaps_in = 0;
-        gaps_in = 3;
+        gaps_in = 6;
         #       gaps_out = 0;
-        gaps_out = 3;
-        border_size = 2;
+        gaps_out = 6;
+        border_size = 3;
         "col.active_border" = "rgb(98971a) rgb(cc241d) 45deg";
         "col.inactive_border" = "0x00000000";
         border_part_of_window = false;
@@ -82,7 +82,7 @@
       };
 
       decoration = {
-        rounding = 0;
+        rounding = 20;
         # active_opacity = 0.90;
         # inactive_opacity = 0.90;
         # fullscreen_opacity = 1.0;
