@@ -1,6 +1,6 @@
 #  add to ~/.config/wpaperd
 [default]
-duration = "3m"
+duration = "2m"
 mode = "stretch"
 sorting = "random"
 
