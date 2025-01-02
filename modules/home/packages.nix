@@ -79,13 +79,13 @@ in {
     zenity
     gparted
     ventoy-full
-#   tidal-hifi
+    tidal-hifi
     tidal-dl
-#   samba4Full
     rpi-imager
     hypridle
     wpaperd
-    whatsapp-for-linux
+#   whatsapp-for-linux
+    whatsie
     noson
     nwg-look
     nwg-dock-hyprland

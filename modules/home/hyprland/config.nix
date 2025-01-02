@@ -14,16 +14,9 @@
         "waybar &"
         "swaync &"
         "wl-paste --watch cliphist store &"
-        "swaylock"
+        "hyprlock"
         "hypridle"
         "wpaperd -d"
-#       "nwg-dock-hyprland  -i 36 -d -c 'rofi -show drun'"
-#       "nwg-dock-hyprland -i 36 -w 5 -mb 10 -ml 10 -mr 10 -x -c 'rofi -show drun' -lp start"
-        ## App auto start
-        #       "[workspace 1 silent] kitty"
-        #       "[workspace 3 silent] "
-        #       "[workspace 4 silent] noson-app"
-        #       "[workspace 5 silent] whatsapp-for-linux"
       ];
 
       input = {
@@ -149,7 +142,7 @@
         "$mainMod, Return, exec, hyprctl dispatch exec '[workspace 1  ] kitty'"
         "$mainMod, F, exec, hyprctl dispatch exec '[workspace 2  ] kitty yazi'"
         "$mainMod, B, exec, hyprctl dispatch exec '[workspace 3  ] firefox'"
-        "$mainMod, C, exec, hyprctl dispatch exec '[workspace 4  ] whatsapp-for-linux'"
+        "$mainMod, C, exec, hyprctl dispatch exec '[workspace 4  ] whatsie'"
         "$mainMod, M, exec, hyprctl dispatch exec '[workspace 5  ] noson-app'"
         "$mainMod SHIFT, D, exec, nwg-dock-hyprland -i 36 -w 5 -mb 10 -ml 10 -mr 10 -x -c 'rofi -show drun' -lp start"
         "$mainMod SHIFT, B, exec, toggle_waybar"
@@ -262,7 +255,8 @@
         "float,qView"
         "center,qView"
         "size 1200 725,qView"
-        "size 1200 800,whatsapp-for-linux"
+        "size 1200 800,Whatsie"
+        "size 1200 800,WhatsApp"
 
         #       "size 1200 725,nwg-look"
         #       "center,nwg-look"
@@ -325,7 +319,7 @@
         "size 850 500,title:^(File Upload)$"
 #       "float,class:^(pavucontrol)$"
         "float,class:^(SoundWireServer)$"
-        "float,class:^(whatsapp-for-linux)$"
+        "float,class:^(whatsie)$"
         "float,class:^(.sameboy-wrapped)$"
         "float,class:^(file_progress)$"
         "float,class:^(confirm)$"
