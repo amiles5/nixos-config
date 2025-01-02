@@ -30,7 +30,7 @@
     #   ./spicetify.nix                   # spotify client
     ./starship.nix # shell prompt
     ./swaylock.nix # lock screen
-    #   ./vscodium.nix                    # vscode forck
+    ./vscodium.nix                    # vscode forck
     ./waybar # status bar
     ./xdg-mimes.nix # xdg config
     ./zsh.nix # shell

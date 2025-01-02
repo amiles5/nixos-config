@@ -79,15 +79,14 @@ in {
     zenity
     gparted
     ventoy-full
-    tidal-hifi
+#   tidal-hifi
     tidal-dl
-    samba4Full
+#   samba4Full
     rpi-imager
     hypridle
     wpaperd
     whatsapp-for-linux
     noson
-    gittyup
     nwg-look
     nwg-dock-hyprland
     nwg-displays
@@ -107,7 +106,7 @@ in {
 
     # Python
     python3
-
+    python312Packages.ipython
     inputs.alejandra.defaultPackage.${system}
   ];
 }
