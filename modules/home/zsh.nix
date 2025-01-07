@@ -69,6 +69,7 @@
       space = "ncdu";
       man = "BAT_THEME='default' batman";
       vi = "vim";
+      du = "du -a";
       l = "eza --icons  -a --group-directories-first -1"; #EZA_ICON_SPACING=2
       ll = "eza --icons  -a --group-directories-first -1 --no-user --long";
       tree = "eza --icons --tree --group-directories-first";
