@@ -12,7 +12,7 @@ in {
 
     general {
       disable_loading_bar=true
-      grace=10
+      grace=20
       hide_cursor=true
       no_fade_in=false
     }

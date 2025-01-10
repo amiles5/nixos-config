@@ -14,12 +14,12 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/79e131b1-2062-4852-9981-345587013b9f";
+    { device = "/dev/disk/by-uuid/0e336c0c-5493-4c2f-b10a-f821055cc347";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/7346-579E";
+    { device = "/dev/disk/by-uuid/4E04-FFCE";
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
@@ -36,17 +36,10 @@
       options = [ "x-systemd.automount" "noauto" "credentials=/etc/samba/cred" "uid=1000" "gid=100"];
     };
 
-  fileSystems."/mnt/ventoy-iso" =
-    { device = "/dev/disk/by-uuid/1C11-749A";
-      fsType = "exfat";
-      options = [ "noauto" "uid=1000" "gid=100" ];
-    };
-
-  fileSystems."/mnt/ventoy-img" =
-    { device = "/dev/disk/by-uuid/230bf232-6d96-4e7d-bae2-9144f758d41a";
-      fsType = "ext4";
-      options = [ "noauto" ];
-    };
+  fileSystems."/mnt/ventoy-iso" = {
+    device = "/dev/disk/by-uuid/1C11-749A";
+    fsType = "exfat";
+  };
 
   swapDevices = [ ];
 
