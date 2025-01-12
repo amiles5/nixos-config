@@ -96,7 +96,8 @@ in {
     transmission_4
     freecad-wayland
     usbutils
-
+    sublime3
+    obsidian
 # C / C++
     gcc
     gdb

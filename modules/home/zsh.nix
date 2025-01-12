@@ -80,7 +80,7 @@
       nix-switch = "nh os switch";
       fr = "nh os switch";
       nix-update = "nh os switch --update";
-      nix-clean = "nh clean all --keep 5";
+      nix-clean = "nh clean all --keep 1";
       nix-search = "nh search";
       nix-test = "nh os test";
 
