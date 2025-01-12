@@ -29,7 +29,7 @@ in {
     modules-left = [
       "custom/launcher"
       "hyprland/workspaces"
-      "tray"
+#     "tray"
     ];
     modules-center = [
       "clock"
@@ -62,15 +62,14 @@ in {
       format = "{icon}";
       on-click = "activate";
       format-icons = {
-        "1" = "I";
-        "2" = "II";
-        "3" = "III";
-        "4" = "IV";
-        "5" = "V";
-        "6" = "VI";
-        "7" = "VII";
-        "8" = "VII";
-        "9" = "IX";
+        "1" = "1";
+        "2" = "2";
+        "3" = "3";
+        "4" = "4";
+        "5" = "5";
+        "6" = "6";
+        "7" = "7";
+        "8" = "8";
         sort-by-number = true;
       };
       persistent-workspaces = {

@@ -94,13 +94,6 @@
           xray = true;
         };
 
-#       drop_shadow = true;
-
-#       shadow_ignore_window = true;
-#       shadow_offset = "0 2";
-#       shadow_range = 20;
-#       shadow_render_power = 3;
-#       "col.shadow" = "rgba(00000055)";
       };
 
       animations = {
@@ -143,6 +136,7 @@
         "$mainMod, F, exec, hyprctl dispatch exec '[workspace 2  ] kitty yazi'"
         "$mainMod, B, exec, hyprctl dispatch exec '[workspace 3  ] firefox'"
         "$mainMod, C, exec, hyprctl dispatch exec '[workspace 4  ] whatsie'"
+        "$mainMod, E, exec, hyprctl dispatch exec '[workspace 4  ] sublime_text'"
         "$mainMod, M, exec, hyprctl dispatch exec '[workspace 5  ] noson-app'"
         "$mainMod SHIFT, D, exec, nwg-dock-hyprland -i 36 -w 5 -mb 10 -ml 10 -mr 10 -x -c 'rofi -show drun' -lp start"
         "$mainMod SHIFT, B, exec, toggle_waybar"
