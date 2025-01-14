@@ -28,7 +28,8 @@ background {
 
 input-field {
     monitor =
-    size = 250, 50
+    size = 250, 70
+#   size = 800, 10
     outline_thickness = 3
     dots_size = 0.33 # Scale of input-field height, 0.2 - 0.8
     dots_spacing = 0.15 # Scale of dots' absolute size, 0.0 - 1.0
@@ -100,7 +101,7 @@ label {
     monitor =
     text =    $USER
     color = $color10
-    font_size = 18
+    font_size = 24
     font_family = Inter Display Medium
 
     position = 0, 100
@@ -138,13 +139,13 @@ label {
 image {
     monitor =
     path=/home/milesj/Pictures/wallpapers/others/cats.jpg
-    size = 230
+    size = 400
     rounding = -1
     border_size = 2
     border_color = $color11
     rotate = 0
     reload_time = -1
-    position = 0, 300
+    position = 0, 400
     halign = center
     valign = bottom
 
