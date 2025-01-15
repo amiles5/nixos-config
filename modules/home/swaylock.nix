@@ -9,12 +9,10 @@
     enable = true;
     package = pkgs.swaylock-effects;
     settings = {
-      image = "~/Pictures/wallpapers/others/cats.jpg";
+#     image = "~/Pictures/wallpapers/others/cats.jpg";
+      image = "~/Pictures/wallpapers/others/Fantasy-Hongkong.png";
       clock = true;
       daemonize = true;
-      #     timestr="%H:%M";
-      #     datestr = "";
-      #     screenshots = true;
       ignore-empty-password = true;
       indicator = true;
       indicator-radius = 200;
