@@ -36,6 +36,12 @@
       options = [ "x-systemd.automount" "noauto" "credentials=/etc/samba/cred" "uid=1000" "gid=100"];
     };
 
+  fileSystems."/mnt/home" =
+    { device = "//192.168.1.250/home";
+      fsType = "cifs";
+      options = [ "x-systemd.automount" "noauto" "credentials=/etc/samba/cred" "uid=1000" "gid=100"];
+    };
+
   fileSystems."/mnt/ventoy-iso" = {
     device = "/dev/disk/by-uuid/1C11-749A";
     fsType = "exfat";
