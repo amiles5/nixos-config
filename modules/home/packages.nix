@@ -63,7 +63,7 @@ in {
     tty-clock # cli clock
     icloudpd
     file
-
+    whatsapp-for-linux
     ## GUI Apps
 #   audacity
     bleachbit # cache cleaner
@@ -84,8 +84,6 @@ in {
     rpi-imager
     hypridle
     wpaperd
-#   whatsapp-for-linux
-    whatsie
     noson
     nwg-look
 #   nwg-dock-hyprland

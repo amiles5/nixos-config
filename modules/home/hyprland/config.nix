@@ -135,7 +135,7 @@
         "$mainMod, Return, exec, hyprctl dispatch exec '[workspace 1  ] kitty'"
         "$mainMod, F, exec, hyprctl dispatch exec '[workspace 2  ] kitty yazi'"
         "$mainMod, B, exec, hyprctl dispatch exec '[workspace 3  ] firefox'"
-        "$mainMod, C, exec, hyprctl dispatch exec '[workspace 4  ] whatsie'"
+        "$mainMod, C, exec, hyprctl dispatch exec '[workspace 4  ] wasistlos'"
         "$mainMod, E, exec, hyprctl dispatch exec '[workspace 4  ] sublime_text'"
         "$mainMod, M, exec, hyprctl dispatch exec '[workspace 5  ] noson-app'"
         "$mainMod SHIFT, D, exec, nwg-dock-hyprland -i 36 -w 5 -mb 10 -ml 10 -mr 10 -x -c 'rofi -show drun' -lp start"
@@ -244,32 +244,29 @@
         "$mainMod, mouse:272, resizewindow"
       ];
 
-      # windowrule
+# windowrule
       windowrule = [
         "float,qView"
         "center,qView"
         "size 1200 725,qView"
-        "size 1200 800,Whatsie"
-        "size 1200 800,WhatsApp"
-
-        #       "size 1200 725,nwg-look"
-        #       "center,nwg-look"
-        #       "float,nwg-look"
+#       "size 1200 800,Whatsie"
+#       "size 1200 800,WhatsApp"
 
         "size 1200 725,io.github.janbar.noson"
         "center,io.github.janbar.noson"
         "float,io.github.janbar.noson"
 
-        "float,imv"
         "center,imv"
         "size 1200 725,imv"
         "float,mpv"
         "center,mpv"
         "tile,Aseprite"
         "size 1200 725,mpv"
+
         "float,title:^(float_kitty)$"
         "center,title:^(float_kitty)$"
         "size 950 600,title:^(float_kitty)$"
+
         "float,audacious"
         "pin,rofi"
         "tile, neovide"
@@ -290,7 +287,10 @@
 
       # windowrulev2
       windowrulev2 = [
-        "float, title:^(Picture-in-Picture)$"
+        "center,class:^(wasistlos)$"
+        "size 1200 725,class:^(wasistlos)$"
+        "float,class:^(wasistlos)$"
+	"float, title:^(Picture-in-Picture)$"
         "opacity 1.0 override 1.0 override, title:^(Picture-in-Picture)$"
         "pin, title:^(Picture-in-Picture)$"
         "opacity 1.0 override 1.0 override, title:^(.*imv.*)$"
@@ -313,7 +313,6 @@
         "size 850 500,title:^(File Upload)$"
 #       "float,class:^(pavucontrol)$"
         "float,class:^(SoundWireServer)$"
-        "float,class:^(whatsie)$"
         "float,class:^(.sameboy-wrapped)$"
         "float,class:^(file_progress)$"
         "float,class:^(confirm)$"
