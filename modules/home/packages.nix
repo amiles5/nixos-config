@@ -96,6 +96,7 @@ in {
     usbutils
     sublime3
     obsidian
+    moneydance
 # C / C++
     gcc
     gdb

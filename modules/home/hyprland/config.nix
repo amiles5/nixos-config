@@ -14,7 +14,7 @@
         "waybar &"
         "swaync &"
         "wl-paste --watch cliphist store &"
-#       "hyprlock"
+        "hyprlock"
         "hypridle"
         "wpaperd -d"
       ];
@@ -138,6 +138,7 @@
         "$mainMod, C, exec, hyprctl dispatch exec '[workspace 4  ] wasistlos'"
         "$mainMod, E, exec, hyprctl dispatch exec '[workspace 4  ] sublime_text'"
         "$mainMod, M, exec, hyprctl dispatch exec '[workspace 5  ] noson-app'"
+        "$mainMod, R, exec, hyprctl dispatch exec '[workspace 6  ] Moneydance'"
         "$mainMod SHIFT, D, exec, nwg-dock-hyprland -i 36 -w 5 -mb 10 -ml 10 -mr 10 -x -c 'rofi -show drun' -lp start"
         "$mainMod SHIFT, B, exec, toggle_waybar"
         "$mainMod, W,exec, wallpaper-picker"
@@ -290,7 +291,12 @@
         "center,class:^(wasistlos)$"
         "size 1200 725,class:^(wasistlos)$"
         "float,class:^(wasistlos)$"
-	"float, title:^(Picture-in-Picture)$"
+
+        "center,class:^(Moneydance)$"
+        "size 1888,1032 ,class:^(Moneydance)$"
+        "float,class:^(Moneydance)$"
+
+        "float, title:^(Picture-in-Picture)$"
         "opacity 1.0 override 1.0 override, title:^(Picture-in-Picture)$"
         "pin, title:^(Picture-in-Picture)$"
         "opacity 1.0 override 1.0 override, title:^(.*imv.*)$"
