@@ -1,0 +1,811 @@
+bind
+	modmask: 64
+	submap: 
+	key: F1
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: show-keybinds
+
+bind
+	modmask: 64
+	submap: 
+	key: Return
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: hyprctl dispatch exec '[workspace 1  ] kitty'
+
+bind
+	modmask: 64
+	submap: 
+	key: F
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: hyprctl dispatch exec '[workspace 2  ] kitty yazi'
+
+bind
+	modmask: 64
+	submap: 
+	key: B
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: hyprctl dispatch exec '[workspace 3  ] firefox'
+
+bind
+	modmask: 64
+	submap: 
+	key: C
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: hyprctl dispatch exec '[workspace 4  ] wasistlos'
+
+bind
+	modmask: 64
+	submap: 
+	key: E
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: hyprctl dispatch exec '[workspace 4  ] sublime_text'
+
+bind
+	modmask: 64
+	submap: 
+	key: M
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: hyprctl dispatch exec '[workspace 5  ] noson-app'
+
+bind
+	modmask: 65
+	submap: 
+	key: D
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: nwg-dock-hyprland -i 36 -w 5 -mb 10 -ml 10 -mr 10 -x -c 'rofi -show drun' -lp start
+
+bind
+	modmask: 65
+	submap: 
+	key: B
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: toggle_waybar
+
+bind
+	modmask: 64
+	submap: 
+	key: W
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: wallpaper-picker
+
+bind
+	modmask: 65
+	submap: 
+	key: W
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: vm-start
+
+bind
+	modmask: 65
+	submap: 
+	key: Escape
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: power-menu
+
+bind
+	modmask: 65
+	submap: 
+	key: Return
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: kitty --start-as=fullscreen -o 'font_size=16'
+
+bind
+	modmask: 8
+	submap: 
+	key: Return
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: kitty --title float_kitty
+
+bind
+	modmask: 64
+	submap: 
+	key: Q
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: killactive
+	arg: 
+
+bind
+	modmask: 64
+	submap: 
+	key: Space
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: togglefloating
+	arg: 
+
+bind
+	modmask: 64
+	submap: 
+	key: Space
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: centerwindow
+	arg: 
+
+bind
+	modmask: 64
+	submap: 
+	key: Space
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: resizeactive
+	arg: exact 950 600
+
+bind
+	modmask: 64
+	submap: 
+	key: D
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: rofi -show drun
+
+bind
+	modmask: 64
+	submap: 
+	key: Escape
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: hyprlock
+
+bind
+	modmask: 8
+	submap: 
+	key: Escape
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: hyprlock
+
+bind
+	modmask: 64
+	submap: 
+	key: P
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: pseudo
+	arg: 
+
+bind
+	modmask: 64
+	submap: 
+	key: J
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: togglesplit
+	arg: 
+
+bind
+	modmask: 64
+	submap: 
+	key: N
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: swaync-client -t -sw
+
+bind
+	modmask: 64
+	submap: 
+	key: Print
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: grimblast --notify --cursor --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png
+
+bind
+	modmask: 0
+	submap: 
+	key: Print
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: grimblast --notify --cursor --freeze copy area
+
+bind
+	modmask: 64
+	submap: 
+	key: left
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: movefocus
+	arg: l
+
+bind
+	modmask: 64
+	submap: 
+	key: right
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: movefocus
+	arg: r
+
+bind
+	modmask: 64
+	submap: 
+	key: up
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: movefocus
+	arg: u
+
+bind
+	modmask: 64
+	submap: 
+	key: down
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: movefocus
+	arg: d
+
+bind
+	modmask: 64
+	submap: 
+	key: 1
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: workspace
+	arg: 1
+
+bind
+	modmask: 64
+	submap: 
+	key: 2
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: workspace
+	arg: 2
+
+bind
+	modmask: 64
+	submap: 
+	key: 3
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: workspace
+	arg: 3
+
+bind
+	modmask: 64
+	submap: 
+	key: 4
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: workspace
+	arg: 4
+
+bind
+	modmask: 64
+	submap: 
+	key: 5
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: workspace
+	arg: 5
+
+bind
+	modmask: 64
+	submap: 
+	key: 6
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: workspace
+	arg: 6
+
+bind
+	modmask: 64
+	submap: 
+	key: 7
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: workspace
+	arg: 7
+
+bind
+	modmask: 64
+	submap: 
+	key: 8
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: workspace
+	arg: 8
+
+bind
+	modmask: 64
+	submap: 
+	key: 9
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: workspace
+	arg: 9
+
+bind
+	modmask: 64
+	submap: 
+	key: 0
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: workspace
+	arg: 10
+
+bind
+	modmask: 65
+	submap: 
+	key: 1
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: movetoworkspacesilent
+	arg: 1
+
+bind
+	modmask: 65
+	submap: 
+	key: 2
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: movetoworkspacesilent
+	arg: 2
+
+bind
+	modmask: 65
+	submap: 
+	key: 3
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: movetoworkspacesilent
+	arg: 3
+
+bind
+	modmask: 65
+	submap: 
+	key: 4
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: movetoworkspacesilent
+	arg: 4
+
+bind
+	modmask: 65
+	submap: 
+	key: 5
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: movetoworkspacesilent
+	arg: 5
+
+bind
+	modmask: 65
+	submap: 
+	key: 6
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: movetoworkspacesilent
+	arg: 6
+
+bind
+	modmask: 65
+	submap: 
+	key: 7
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: movetoworkspacesilent
+	arg: 7
+
+bind
+	modmask: 65
+	submap: 
+	key: 8
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: movetoworkspacesilent
+	arg: 8
+
+bind
+	modmask: 65
+	submap: 
+	key: 9
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: movetoworkspacesilent
+	arg: 9
+
+bind
+	modmask: 65
+	submap: 
+	key: 0
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: movetoworkspacesilent
+	arg: 10
+
+bind
+	modmask: 68
+	submap: 
+	key: c
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: movetoworkspace
+	arg: empty
+
+bind
+	modmask: 65
+	submap: 
+	key: left
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: movewindow
+	arg: l
+
+bind
+	modmask: 65
+	submap: 
+	key: right
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: movewindow
+	arg: r
+
+bind
+	modmask: 65
+	submap: 
+	key: up
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: movewindow
+	arg: u
+
+bind
+	modmask: 65
+	submap: 
+	key: down
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: movewindow
+	arg: d
+
+bind
+	modmask: 68
+	submap: 
+	key: left
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: resizeactive
+	arg: -80 0
+
+bind
+	modmask: 68
+	submap: 
+	key: right
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: resizeactive
+	arg: 80 0
+
+bind
+	modmask: 68
+	submap: 
+	key: up
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: resizeactive
+	arg: 0 -80
+
+bind
+	modmask: 68
+	submap: 
+	key: down
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: resizeactive
+	arg: 0 80
+
+bind
+	modmask: 72
+	submap: 
+	key: left
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: moveactive
+	arg: -80 0
+
+bind
+	modmask: 72
+	submap: 
+	key: right
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: moveactive
+	arg: 80 0
+
+bind
+	modmask: 72
+	submap: 
+	key: up
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: moveactive
+	arg: 0 -80
+
+bind
+	modmask: 72
+	submap: 
+	key: down
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: moveactive
+	arg: 0 80
+
+bind
+	modmask: 0
+	submap: 
+	key: XF86AudioRaiseVolume
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: pamixer -i 2
+
+bind
+	modmask: 0
+	submap: 
+	key: XF86AudioLowerVolume
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: pamixer -d 2
+
+bind
+	modmask: 0
+	submap: 
+	key: XF86AudioMute
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: pamixer -t
+
+bind
+	modmask: 0
+	submap: 
+	key: XF86AudioPlay
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: playerctl play-pause
+
+bind
+	modmask: 0
+	submap: 
+	key: XF86AudioNext
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: playerctl next
+
+bind
+	modmask: 0
+	submap: 
+	key: XF86AudioPrev
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: playerctl previous
+
+bind
+	modmask: 0
+	submap: 
+	key: XF86AudioStop
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: playerctl stop
+
+bind
+	modmask: 64
+	submap: 
+	key: mouse_down
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: workspace
+	arg: r-1
+
+bind
+	modmask: 64
+	submap: 
+	key: mouse_up
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: workspace
+	arg: r+1
+
+bind
+	modmask: 64
+	submap: 
+	key: Tab
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: workspace
+	arg: e+1
+
+bind
+	modmask: 65
+	submap: 
+	key: Tab
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: workspace
+	arg: e-1
+
+bind
+	modmask: 0
+	submap: 
+	key: XF86MonBrightnessUp
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: brightnessctl set 5%+
+
+bind
+	modmask: 0
+	submap: 
+	key: XF86MonBrightnessDown
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: brightnessctl set 5%-
+
+bind
+	modmask: 64
+	submap: 
+	key: XF86MonBrightnessUp
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: brightnessctl set 100%+
+
+bind
+	modmask: 64
+	submap: 
+	key: XF86MonBrightnessDown
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: brightnessctl set 100%-
+
+bind
+	modmask: 64
+	submap: 
+	key: V
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: exec
+	arg: cliphist list | rofi -dmenu -theme-str 'window {width: 50%;}' | cliphist decode | wl-copy
+
+bindm
+	modmask: 64
+	submap: 
+	key: mouse:273
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: mouse
+	arg: movewindow
+
+bindm
+	modmask: 64
+	submap: 
+	key: mouse:272
+	keycode: 0
+	catchall: false
+	description: 
+	dispatcher: mouse
+	arg: resizewindow
+
+
