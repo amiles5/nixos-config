@@ -138,7 +138,7 @@
         "$mainMod, C, exec, hyprctl dispatch exec '[workspace 4  ] wasistlos'"
         "$mainMod, E, exec, hyprctl dispatch exec '[workspace 4  ] sublime_text'"
         "$mainMod, M, exec, hyprctl dispatch exec '[workspace 5  ] noson-app'"
-        "$mainMod, R, exec, hyprctl dispatch exec '[workspace 6  ] Moneydance'"
+        "$mainMod, R, exec, hyprctl dispatch exec '[workspace 6  ] moneydance'"
         "$mainMod SHIFT, D, exec, nwg-dock-hyprland -i 36 -w 5 -mb 10 -ml 10 -mr 10 -x -c 'rofi -show drun' -lp start"
         "$mainMod SHIFT, B, exec, toggle_waybar"
         "$mainMod, W,exec, wallpaper-picker"
@@ -293,7 +293,7 @@
         "float,class:^(wasistlos)$"
 
         "center,class:^(Moneydance)$"
-        "size 1888,1032 ,class:^(Moneydance)$"
+#       "size 1888,1032 ,class:^(Moneydance)$"
         "float,class:^(Moneydance)$"
 
         "float, title:^(Picture-in-Picture)$"
