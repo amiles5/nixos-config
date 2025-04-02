@@ -14,38 +14,15 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/0e336c0c-5493-4c2f-b10a-f821055cc347";
+    { device = "/dev/disk/by-uuid/2a9b8de0-8b6d-45be-b8bc-a997cf500aed";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/4E04-FFCE";
+    { device = "/dev/disk/by-uuid/C567-8EA5";
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
-
- fileSystems."/mnt/backup_images" =
-    { device = "//192.168.1.250/backup_images";
-      fsType = "cifs";
-      options = [ "x-systemd.automount" "noauto" "credentials=/etc/samba/cred" "uid=1000" "gid=100"];
-    };
-
-  fileSystems."/mnt/roon_data" =
-    { device = "//192.168.1.250/roon_data_yakov";
-      fsType = "cifs";
-      options = [ "x-systemd.automount" "noauto" "credentials=/etc/samba/cred" "uid=1000" "gid=100"];
-    };
-
-  fileSystems."/mnt/home" =
-    { device = "//192.168.1.250/home";
-      fsType = "cifs";
-      options = [ "x-systemd.automount" "noauto" "credentials=/etc/samba/cred" "uid=1000" "gid=100"];
-    };
-
-  fileSystems."/mnt/ventoy-iso" = {
-    device = "/dev/disk/by-uuid/1C11-749A";
-    fsType = "exfat";
-  };
 
   swapDevices = [ ];
 
